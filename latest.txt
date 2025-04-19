@@ -1,0 +1,40 @@
+On generative AI and quantum computing as well as advances in climate predictions: https://www.francobritishdatasociety.org/events/X-UK/Event-20250212-Recording.mp4
+At AWS summit: a lot of tech, knowledge of new firms such as circleci for CI/CD (in the realm of Jenkins) and devoteam that were unknown to me. A brief apparition of Pascal, the quantum computing company with a very interesting 
+quantum computing company.
+At the blockchain week summit, a lot of bitcoins, but an idea of using this for patient data:
+
+🔒 1. Patientory
+Blockchain used: Ethereum-based.
+
+Tech details: Patient data is encrypted and stored off-chain, while blockchain handles access control and audit trails.
+
+Token: Uses PTOY token for network access and services.
+
+📂 2. Medicalchain
+Blockchain used: Hyperledger Fabric (for permissioned access) + Ethereum (for tokens).
+
+Data model: Off-chain data storage with hashes and permissions on-chain.
+
+Use: Enables patients to grant temporary access to medical professionals.
+
+💡 3. BurstIQ
+Blockchain used: Proprietary blockchain framework tailored for healthcare compliance.
+
+Purpose: Secure, compliant sharing of health data, identity, and consent.
+
+Extra: Smart contracts used to define data-sharing rules.
+
+🛡️ 4. Guardtime
+Blockchain used: KSI (Keyless Signature Infrastructure), a proprietary blockchain-like system.
+
+Government partner: Worked with Estonia on eHealth systems.
+
+Focus: Integrity verification of health records, not just data sharing.
+
+🌐 5. Solve.Care
+Blockchain used: Ethereum-based, with smart contracts for coordination.
+
+Platform: Decentralizes healthcare coordination (scheduling, benefits, data).
+
+Token: SOLVE token used for payments and operations.
+
