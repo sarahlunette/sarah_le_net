@@ -1,0 +1,3 @@
+Free deployment of APIs with more resources (very difficult to deal with large LLM in this case even with GPU looks like)
+- colab (drive, ngrok ou cloudfare for APIs and external IPs)
+- Huggingface spaces (free CPU)
