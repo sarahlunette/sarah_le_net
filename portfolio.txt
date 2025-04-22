@@ -1,5 +1,6 @@
 Portfolio: 
   Hackaton:
+  - Microsoft AI Agents
   - Smart Irrigation Systems (GenAI and Agents)
   - Doctolib: diagnosis and appointments scheduling (GenAI)
   - Geohack AI: classification in satellite imagery of locust breeding grounds AFD - Instadeep (Computer Vision)
