@@ -1,0 +1,17 @@
+Portfolio: 
+  Hackaton:
+  - Smart Irrigation Systems (GenAI and Agents)
+  - Doctolib: diagnosis and appointments scheduling (GenAI)
+  - Geohack AI: classification in satellite imagery of locust breeding grounds AFD - Instadeep (Computer Vision)
+  - FurgalAI: model of deforestation sound prediction with codecarbon assessment (carbon and electricity cost) (RandomForest)
+  Interviews:
+  - Carbo
+  - Weward
+  - Ankorstore
+  - Dailymotion
+  - ContentSquare
+  Personal Projects:
+  - Deployment and research on tsunami casualty prediction (Deep Learning and MLOPS)
+  - Streamlit applications:
+    - Avoiding titanic
+    - Water tracker
