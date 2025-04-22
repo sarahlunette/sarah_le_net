@@ -1,0 +1,8 @@
+None is giving up free good ressources it seems:
+- Google Colab Free / Pro (though GPU time is limited).
+
+- Paperspace (Free Tier) offers a great environment for hosting models on GPUs.
+
+- RunPod or Vast.ai can also be used for free with some limitations.
+
+- kaggle does not support continuous services such as API
