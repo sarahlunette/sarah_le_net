@@ -1,9 +1,8 @@
 Olivier, granted me an interview. To sum up his career: water and sanitation and civil engineering, Congo (displaced population), Ethiopia, Uganda. Work with Solidarité International. He is now CEO of Baobab Tech.
 
 I asked him a few questions:
-How did you get in the humanitarian world? I started off in Belgium when I was 16, working on micro-barrages in West Africa. I did some unpaid internship after traveling alone into Uganda. Humanitarian work in water supply in Ethiopia. Internships (in Tunisia), understanding the dev sector, paid internship managing staff in Ethiopia, Congo with Solidarité, Sudan Irish NGO, international expats.
-
-Organisations hire national staff now, it is very different to get to this type of positions in WASH. 
+How did you get in the humanitarian world? I started off in Belgium when I was 16, working on micro-barrages in West Africa. I did some unpaid internships after traveling alone into Uganda. Humanitarian work in water supply in Ethiopia. Internships (in Tunisia), understanding the dev sector, paid internship managing staff in Ethiopia, Congo with Solidarité, Sudan Irish NGO, international expats.
+Organisations hire national staff now, it is very different to get into this type of position in WASH. 
 I studied a year in Canada, and I  was looking for organisations that are building support and capabilites abroad instead of working there. It made more sense to be a trainer, I was part of the executive team, managing half of the organisation.
 I am now working in Calgary, and slowed down on travel with kids, 10 and 13, but I worked in Cameroun and  Zambia, as well.
 
@@ -15,133 +14,34 @@ We work mostly contract-based. Not a lot of people can do that and it is all new
 What happens in Africa?  We might be partenering with some organisations. There exists digital solutions, for instance in Nigeria which is quite vibrant with technical solutions and AI powered retrieval for water and sanitation. There are geospecific capabilities, build in countries or improved in countries, even regionally, in East Africa.
 
 What is your view on using google partnerships?
-Social Impact interest in big corporations in general is kind of the same, for instance at Microsoft, which is the preferred framework for NGOs, and they propose combination of services: grant on ideas, pair up with big NGOs, work with Save the Children, pairing engineers with them
-Google works on large scale projects that can become quite local, for instance, they have expanded flood alerts tools to 100 countries.
+Social impact interest in big corporations in general is kind of the same. Philanthropic NGOs 80/90% locked in Microsoft. They propose combination of services: grant on ideas, pair up with big NGOs, work with Save the Children, pairing engineers with them
+Google works on large scale projects that can become quite local, for instance, they have expanded flood alerts tools to 100 countries. They provide lots of credits tutorials how to get hooked in and ways of using natural language, multiple datasets, engage with increasing number of dataset, etc.
+But generally I don't really like to work with big corporations. I'd rather partener with goverments, with data providers, who have ethical backgrounds, clauses of doing no harm.
 
-using natural language, multiple datasets, engage with increasing number of dataset, provide lots of credits, get hook in, philanthropic NGOs 80/90% locked in Microsoft (more on Microsoft stack), IT departement hooked into Azure (exploring opportunities), goverment pairing with data providers, ethical backgrounds, clauses, doing no harm (palantir contracts, governments) not a big fan (can you be both), list of evil
-Continuously exist through revenue stream (tools), direct investment entrepreneurs in the countries that will be using these tools (certainly be open to it)
-Data centers ? Cloud product one of the top three (or indirectly) infrastructure on Google cloud / own models (run small models, better now  anywhere you want) data provider, data governance rules, adapting to them, couple of clients, data regions 
-France way behind for infrastructures
-DagsHub. ?
-Connect with Agile (African AI summit ? Fluff and up to no good) using chatgpt to build their apps
-Cameroun (funding, don't come with funding, tech investment from governments)
-David Hugues 
-Pierre Lerat
-Rachel Wells (Datakind)
-Wash AI: semi feature product (other places than Africa ? India, Pakistan)
-Tools for government: at this stage the service is being sold, negociating open-source (conversation), not turn-key solutions, experimental space for government and organisation, cautious on AI tools ? 
-How cautious, pilot phase, R&D ? Groups of institutional and individual level adoption, the larger stricter, microsoft chat, copilot, adoption 
-Tools and agents ? Don't have production ready tools, experimenting, internal policies on how to use AI, literacy
-Using it in the right way
+Where do you find grants and revenue?
+They continuously exist through revenue stream (tools), direct investment entrepreneurs in the countries that will be using these tools.
+
+Is the developing world behind in terms of data centers? Cloud product one of the top three (or indirectly) infrastructure on Google cloud, you can run your own models (run small models, which is better now because you can run them anywhere you want), data provider. What is different is data governance rules and adapting to them according to data regions.
+France way behind for infrastructures. A lot of structure just need using chatgpt to build their apps.
+
+
+What is happening with GenAI and the humanitarian sector and Baobab Tech?
+About tools for governments: at this stage the service is being sold (WASH AI, as a semi-feature product) but as of general governments are negociating open-source (conversation), not turn-key solutions, it is an experimental space for government and organisation
+How cautious, pilot phase, R&D? Groups of institutional and individual level adoption, the larger stricter, microsoft chat, copilot, adoption. Don't have production ready tools, they are experimenting, internal policies on how to use AI, literacy. Using it in the right way
 Lot of training and building capabilities, gap in opportunity (engage in experimenting, experimenting quietly, missed opportunity, depends on who you talk to, defunding from UK and United States)
 Cost experiment, spending more / Data Scientist and AI Agents (can be replaced, 2 hours, to process qualitative data, takes minutes now)
-Workflow tools
-Stephanie Mikkelson
-Deep research organisation (in data science, domain agnostic) / focused tools pointed to specific datasets / climate
-Hello Leo
-Flow tech firm 
-Bruno Le Bansais
-Water and sanitation,  Nottingham, civil engineering + course in elsewhere in the UK
-Congo, Ethiopia, Uganda: Solidarité International, water supply and sanitation eastern congo 2008, project management (displaced population from Eastern Congo)
-How did you get ? Started off in Belgium when 16, micro-barrages, West Africa. Humanitarian work in water supply in Ethiopia. Internships (in Tunisia), traveled alone into Uganda, understanding the dev sector, paid internship managing staff in Ethiopia, Congo with Solidarité, Sudan Irish NGO, international expats, national staff now (very different)
-Studied a year in Canada, looking for organisation building support and capabilites ? Made more sense (trainer, part of the executive team, managing half of the organisation)
-OCHA Renard
-Working in Calgary
-Slowed down on travel with kids, 10 and 13, worked in Cameroun and Zambia
-See work on linkedin, dev work in Canada, mostly training and building capabilities, in the water sector, shortage trips, training, consulting support
-Baobab tech: sector broader social environement impact space, for profit space (emergence of Generative AI, language models, before GPT3 came out, comething is going to change very soon)
-In the water sector, knowledge retrieval system, genai space, unstructured data, big pool, hard to find people know to do
-Not building ML models, more generative and ML / NLP space
-Not a lot of people can do that it is all new (products tools, within this social environement space, in the water space)
-Combining unstructured knowledge retrieval, climate related data, organisation / need some help in data science, help developper, web app dev, project-based, slow organic growth, trying to stay very lean, evolved (US / science community), kind of navigating that as well (whole bunch of scientists, around associated projects, 20 billion dollars worth of people mixed skills, social impact / environemental space)
-Partenering: digital solutions (quite vibrant in Nigeria, Ghana (Google)), technical solution, AI powered retrieval for water and sanitation 
-(geospecific capabilities, build in countries or improved in countries, even regionally in East Africa)
-What is your view on using google partnerships ? Interest and fluff as well ? Social Impact interest
-Microsoft has the same (combination, grant idea, pair up with big NGOs, work with Save the Children, pair engineers with them), quite local, expand it to 100 countries on flooding, using natural language, multiple datasets, engage with increasing number of dataset, provide lots of credits, get hook in, philanthropic NGOs 80/90% locked in Microsoft (more on Microsoft stack), IT departement hooked into Azure (exploring opportunities), goverment pairing with data providers, ethical backgrounds, clauses, doing no harm (palantir contracts, governments) not a big fan (can you be both), list of evil
-IBM call for code UN in the whole AI space
-Continuously exist through revenue stream (tools), direct investment entrepreneurs in the countries that will be using these tools (certainly be open to it)
-Data centers ? Cloud product one of the top three (or indirectly) infrastructure on Google cloud / own models (run small models, better now  anywhere you want) data provider, data governance rules, adapting to them, couple of clients, data regions 
-France way behind for infrastructures
-DagsHub. ?
-Connect with Agile (African AI summit ? Fluff and up to no good) using chatgpt to build their apps
-Cameroun (funding, don't come with funding, tech investment from governments)
-David Hugues 
-Pierre Lerat
-Rachel Wells (Datakind)
-Wash AI: semi feature product (other places than Africa ? India, Pakistan)
-Tools for government: at this stage the service is being sold, negociating open-source (conversation), not turn-key solutions, experimental space for government and organisation, cautious on AI tools ? 
-How cautious, pilot phase, R&D ? Groups of institutional and individual level adoption, the larger stricter, microsoft chat, copilot, adoption 
-Tools and agents ? Don't have production ready tools, experimenting, internal policies on how to use AI, literacy
-Using it in the right way
-Lot of training and building capabilities, gap in opportunity (engage in experimenting, experimenting quietly, missed opportunity, depends on who you talk to, defunding from UK and United States)
-Cost experiment, spending more / Data Scientist and AI Agents (can be replaced, 2 hours, to process qualitative data, takes minutes now)
-Workflow tools
-Stephanie Mikkelson
-Deep research organisation (in data science, domain agnostic) / focused tools pointed to specific datasets / climate
-Hello Leo
-Flow tech firm 
-Bruno Le Bansais
-Water and sanitation,  Nottingham, civil engineering + course in elsewhere in the UK
-Congo, Ethiopia, Uganda: Solidarité International, water supply and sanitation eastern congo 2008, project management (displaced population from Eastern Congo)
-How did you get ? Started off in Belgium when 16, micro-barrages, West Africa. Humanitarian work in water supply in Ethiopia. Internships (in Tunisia), traveled alone into Uganda, understanding the dev sector, paid internship managing staff in Ethiopia, Congo with Solidarité, Sudan Irish NGO, international expats, national staff now (very different)
-Studied a year in Canada, looking for organisation building support and capabilites ? Made more sense (trainer, part of the executive team, managing half of the organisation)
-OCHA Renard
-Working in Calgary
-Slowed down on travel with kids, 10 and 13, worked in Cameroun and Zambia
-See work on linkedin, dev work in Canada, mostly training and building capabilities, in the water sector, shortage trips, training, consulting support
-Baobab tech: sector broader social environement impact space, for profit space (emergence of Generative AI, language models, before GPT3 came out, comething is going to change very soon)
-In the water sector, knowledge retrieval system, genai space, unstructured data, big pool, hard to find people know to do
-Not building ML models, more generative and ML / NLP space
-Not a lot of people can do that it is all new (products tools, within this social environement space, in the water space)
-Combining unstructured knowledge retrieval, climate related data, organisation / need some help in data science, help developper, web app dev, project-based, slow organic growth, trying to stay very lean, evolved (US / science community), kind of navigating that as well (whole bunch of scientists, around associated projects, 20 billion dollars worth of people mixed skills, social impact / environemental space)
-Partenering: digital solutions (quite vibrant in Nigeria, Ghana (Google)), technical solution, AI powered retrieval for water and sanitation 
-(geospecific capabilities, build in countries or improved in countries, even regionally in East Africa)
-What is your view on using google partnerships ? Interest and fluff as well ? Social Impact interest
-Microsoft has the same (combination, grant idea, pair up with big NGOs, work with Save the Children, pair engineers with them), quite local, expand it to 100 countries on flooding, using natural language, multiple datasets, engage with increasing number of dataset, provide lots of credits, get hook in, philanthropic NGOs 80/90% locked in Microsoft (more on Microsoft stack), IT departement hooked into Azure (exploring opportunities), goverment pairing with data providers, ethical backgrounds, clauses, doing no harm (palantir contracts, governments) not a big fan (can you be both), list of evil
-IBM call for code UN in the whole AI space
-Continuously exist through revenue stream (tools), direct investment entrepreneurs in the countries that will be using these tools (certainly be open to it)
-Data centers ? Cloud product one of the top three (or indirectly) infrastructure on Google cloud / own models (run small models, better now  anywhere you want) data provider, data governance rules, adapting to them, couple of clients, data regions 
-France way behind for infrastructures
-DagsHub. ?
-Connect with Agile (African AI summit ? Fluff and up to no good) using chatgpt to build their apps
-Cameroun (funding, don't come with funding, tech investment from governments)
-David Hugues 
-Pierre Lerat
-Rachel Wells (Datakind)
-Wash AI: semi feature product (other places than Africa ? India, Pakistan)
-Tools for government: at this stage the service is being sold, negociating open-source (conversation), not turn-key solutions, experimental space for government and organisation, cautious on AI tools ? 
-How cautious, pilot phase, R&D ? Groups of institutional and individual level adoption, the larger stricter, microsoft chat, copilot, adoption 
-Tools and agents ? Don't have production ready tools, experimenting, internal policies on how to use AI, literacy
-Using it in the right way
-Lot of training and building capabilities, gap in opportunity (engage in experimenting, experimenting quietly, missed opportunity, depends on who you talk to, defunding from UK and United States)
-Cost experiment, spending more / Data Scientist and AI Agents (can be replaced, 2 hours, to process qualitative data, takes minutes now)
-Workflow tools
-Stephanie Mikkelson
-Deep research organisation (in data science, domain agnostic) / focused tools pointed to specific datasets / climate
-Hello Leo
-Flow tech firm 
-Bruno Le Bansais
-Les types de projets
-Comment ils arrivent ?
-Out of my own funds, content management systems, client relationship, profit that I could leverage, from there (after starting building) worked 4 or 5. /benefit from that, fund more of it, non WASH topics with AI, larger direct grants for wash specifically (fund at least a big focus on it), funded by a call one leads to another sometimes, one call for proposals in the last three years, sole source of work
-Hamida Aman
-Combien vous êtes:
-from WASH AI 3 (Sol non tehcnical, languages pieces)
-Zambia
-Data Scientist just hired (government contracts that I have, short term, couple day a week) Dev, helping out two different projects
-Comment vous travaillez ? Contracts, a lot of the work myself
-Exploding in both ways: more and more organisations able (supply and demand increasing, don't want to be growing a small company, big heavy porjects, very value-based, tech super interesting), full profit, expertise and responsibility
-More risks than they should
 
-Mottis, MSF is a really talkative organisation they think well about the issue
-Other: I think you overvalue people knowledge
+I started out of my own funds, I did some content management systems and created client relationships. With the profit that I could leverage, I started hiring. There are large direct grants for wash specifically, and you know how it works one call one leads to another sometimes. When time and funds we could work on non-WASH topics with AI.
 
-Can't get the traction, ego, fear, huge untapped opportunity in every single space (productivity, sector wide, shared data, secured shared data, individual actions, day to day)
+I hire Data Scientists and dev on contract and they have been helping me out on two different projects. The rest, I do a lot of work myself.
 
-Someone else ? Hrispsime
-Jeremy Boy ? Global Pulse (UN is not designed to do innovations), leverage innovation / I wouldn't hold my breathe on what they are going to do, or any of their innovation labs, private sectors and entrepreneurs and grow those
-Stuck with the UN bureaucracy
-Count every penny
+GenAi is currently exploding in both ways: more and more organisations are able to do that, supply and demand is increasing, but I don't want to be growing a big company, with big heavy projects, we are very value-based even in full profit, we rely on expertise and responsibility.
+
+Organisations nowadays are advancing in this sense, and they are even taking more risks than they should. Yet, they can't get the traction,for ego, fear, but there is huge untapped opportunity in every single space (productivity, sector wide, shared data, secured shared data, individual actions, day to day).
+
+What about data in the large organisations ? For instance UN, with Global Pulse?
+UN is not designed to do innovations, or leverage innovation. They are stuck with the UN bureaucracy and count every penny.
+I wouldn't hold my breathe on what they are going to do, or any of their innovation labs, I would rely on the private sectors and entrepreneurs to grow those.
 
 It's ok, got what they did together
 
