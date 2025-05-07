@@ -8,7 +8,7 @@ How did you get in the humanitarian world?
 About Baobab tech?
 Our sector is in the broad social environment impact space, for profit, that started with the emergence of Generative AI and language models. I started off before GPT3 came out. In the water sector you can use knowledge retrieval systems, GenAI, there is a lot of unstructured data, big pools of data and it is hard to find people who work well on these subjects. We are not building ML models, we work on more generative AI and ML / NLP spaces. We work mostly contract-based and with people who are able to combine unstructured knowledge retrieval, climate-related data, etc. We need some help in data science, we hire developers, web-app developers, mostly project-based. The company, even for profit, has a slow organic growth. We are trying to stay very lean.
 
-As you worked there, could you tell about what is happening in this domain in Africa?
+As you worked there, could you tell me more about what is happening in this domain in Africa?
 We might be partnering with some organizations. There exists digital solutions, for instance in Nigeria which is quite vibrant with technical solutions and AI powered retrieval for water and sanitation. There are geospecific capabilities, built in countries or improved in countries, even regionally, in East Africa as well.
 
 What is your view on using Google partnerships?
