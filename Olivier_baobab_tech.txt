@@ -17,13 +17,15 @@ Social impact interest in big corporations in general is kind of the same. Phila
 What about data centers?
 On any of the three top cloud provider you can run your own models. It doesn't matter where the data center is (it might be cheaper if local but not always). What is different is data governance rules and adapting to them according to data regions. But, yes somehow a bit behind but as is France, for instance.
 
-What is happening with GenAI and the humanitarian sector and Baobab Tech? How cautious are organizations with pilot phase and R&D?
+What is happening with GenAI and the humanitarian sector and Baobab Tech?
+How cautious are organizations with pilot phase and R&D?
 At this stage the service is being sold (WASH AI, as a semi-feature product) but as of general governments are more negotiating open-source, not turn-key solutions. It is an experimental space for them. There are groups of institutional and individual level adoption, the larger the stricter. Some use Microsoft chat, Copilot for internal use. They don't have production-ready tools, they are experimenting, they are experimenting on internal policies on how to use AI, on how to use it in the right way. They need a lot of training and building capabilities. They engage in experimenting quietly. But the situation is also complicated with the defunding from UK and United States. Yet, they are cost experimenting or spending more for performance: AI Agents can replace Data Scientists. What took 2 hours before, for processing data takes minutes now. Organisations nowadays are advancing in this sense, and they are even taking more risks than they should. Yet, they can't get the traction, for ego, fear. But there is huge untapped opportunity in every single space (productivity, sector wide, shared data, secured shared data, individual actions, day to day).
 
 Where do you find grants and revenue?
 They continuously exist through revenue stream from specific tools, direct investment entrepreneurs in the countries that will be using these tools. I started off my own funds, I did some content management systems and created client relationships. With the profit that I could leverage, I started hiring. There are large direct grants for wash specifically, and you know how it works one call leads to another, sometimes. When time and funds, we could work on non-WASH topics with AI. I hire Data Scientists and developers on contract and they have been helping me out on two different projects. The rest, I do a lot of work myself. GenAi is currently exploding in both ways: more and more organizations are able to do that, supply and demand is increasing, but I don't want to be growing a big company, with big heavy projects, we are very value-based even in full-profit, we rely on expertise and responsibility.
 
-What about data in the large organizations? For instance UN, with Global Pulse?
+What about data in the large organizations?
+For instance UN, with Global Pulse?
 UN is not designed to do innovations, or leverage innovation. They are stuck with the UN bureaucracy and count every penny. I wouldn't hold my breath on what they are going to do, or any of their innovation labs, I would rely on the private sector and entrepreneurs to grow those.
 
 What could we bring you?
