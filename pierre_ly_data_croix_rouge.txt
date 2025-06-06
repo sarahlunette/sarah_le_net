@@ -1,1 +1,11 @@
+Red Cross is 70000 volunteers and 20000 employees. The French Red cross works for, amongst others, street outreach, a small call center of 100 people to answer people in need, natural catastrophees on the territory such as Mayotte recently. There is a different entity which headquarter is in Geneva, the Red Cross Comittee for Conflict Zones, founded in 1963, for Switzerland being a neutral zone.
+  Pierre Ly is today the Coordinator of Data and AI Innovations at French Red Cross. He started his career at the Ecole Polytechnique and continued with a master's at Supaero. He worked first at Thales and then at Dassault System in Engineering. He identifies himself more as on the operational side and deploiement of technology than being a technical person. He started at the Red Cross as a volunteer and got hired for a small project of logistics of deliveries. During Covid he held a position of working against social isolation, for citizen mobilisation and vaccination amongst other things.
 
+Advice research:
+- IHEDN
+- IHENI
+- https://www.cartong.org/ for cartography
+- https://www.spherestandards.org/
+- https://hulo.coop/fr/ logitics for humanitarian
+- https://www.highwind-ems.com/fr/a-propos/ using smartphone data for emergencies
+- https://www.croix-rouge.fr/nos-actions-a-l-international/les-equipes-de-reponses-aux-urgences-humanitaires Red Cross Projects
