@@ -34,7 +34,7 @@ What about data in the large organizations? For instance UN, with Global Pulse?
   UN is not designed to do innovations, or leverage innovation. They are stuck with the UN bureaucracy and count every penny. I wouldn't hold my breath on what they are going to do, or any of their innovation labs, I would rely on the private sector and entrepreneurs to grow those.
 
 What could we bring to you?
-  Hard to find talent on the edge of LLM, in the applied space. An AI developer ?
+  Hard to find talent on the edge of LLM, in the applied space. An AI developer?
 
 Are there other firms like yours?
   There are individual consultancies building products, advising a certain number of projects. They are actually building and playing with technology, internally, with organizations, but there are no magical products pick-and-buy. We are in a huge experimental phase. Organizations are kind of exploring and partnering.
@@ -42,3 +42,4 @@ Are there other firms like yours?
 What is your stack?
 We use: React, LangGraph, LangChain, Python based-frameworks. Self-posted models (models 10 to 16, only tokens), paying models, we can hit scale it is worth it (secure data, cloud deployments, by token). Versailles AI SDK mistral, because you don't need to change models as it is model agnostic.
 
+We'll follow closely this company which seems to have a deep understanding of the sector and might be paving the way for AI integration in development aid.
