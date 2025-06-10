@@ -8,3 +8,17 @@ teaching = ['Data Engineering', 'MLOPS', 'Data Science']
 trips = ['South America', 'Greece']
 career = ['Endeavor', 'CV', 'Certifications', 'University Projects', 'Portfolio']
 entrepreneurship = ['The Bubble', '?']
+
+# Récupérer la liste des fichiers .txt
+article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
+
+# Afficher une liste déroulante pour choisir un article
+selected_article = st.sidebar.selectbox("Choisir un article", article_files)
+
+# Charger et afficher l'article sélectionné
+with open(f"articles/{selected_article}", "r", encoding="utf-8") as file:
+    content = file.read()
+
+st.title(selected_article.replace('.txt', '').replace('_', ' '))
+st.write(content)
+
