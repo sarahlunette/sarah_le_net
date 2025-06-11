@@ -1,4 +1,4 @@
-import streamlit as streamlit
+import streamlit as st
 st.title('Sarah LE NET blogpost')
 pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackatons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography']
 p_interest = ['Interviews', 'State-of-the-art', 'Articles']
