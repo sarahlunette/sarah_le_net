@@ -2,7 +2,7 @@ import streamlit as streamlit
 st.title('Sarah LE NET blogpost')
 pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackatons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography']
 p_interest = ['Interviews', 'State-of-the-art', 'Articles']
-hackatons = ['GeoHack AI', 'FrugalAI', 'Bat'Adapt',
+hackatons = ['GeoHack AI', 'FrugalAI', "Bat'Adapt",
              'AI Action Summit',
              'Women in Data Science', 
              'Microsoft AI Agents - Emergency App', 
