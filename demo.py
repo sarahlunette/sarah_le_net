@@ -51,7 +51,12 @@ if sidebar==pages[10]:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
     # Afficher dans une iframe HTML
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
-    st.components.v1.html(pdf_display, height=1000)
-
-
+    pdf_display = f'''
+    <embed
+        src="data:application/pdf;base64,{base64_pdf}"
+        width="700"
+        height="1000"
+        type="application/pdf"
+    />
+    '''
+    st.components.v1.html(pdf_display, height=900)
