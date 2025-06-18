@@ -43,7 +43,7 @@ if sidebar==pages[2]:
 
 if sidebar==pages[10]:
     st.title('CNAM')
-    st.header(f'<a href="https://docs.google.com/presentation/d/1F1t67TK6D-fCbuYQ6IoT_T6-wQ2aN2eTbr2cA3qLWPI/edit?usp=sharing">📄 Ouvrir la présentation</a>')
+    st.markdown(f'<a href="https://docs.google.com/presentation/d/1F1t67TK6D-fCbuYQ6IoT_T6-wQ2aN2eTbr2cA3qLWPI/edit?usp=sharing">📄 Ouvrir la présentation</a>')
     # Chemin vers ton fichier PDF
     pdf_path = "CNAM/projet_expoped.pdf"
 
