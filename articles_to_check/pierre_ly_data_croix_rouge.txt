@@ -60,7 +60,7 @@ What is the main factor of change that is not data-related in the organization?
 You have an appointment at 2PM, could you conclude on this interview?
 
 "I really want to produce something impactful as Guillaume Rozier (Macron's data counsellor) or Paul Duhan (Bayes Impact). In the near future, we will be integrating volunteer on AI in an organic way. Another problematic is the exclusion of the digital world: 16 million people are far from it, 9 million completely excluded, mainly older people or people who might be scared of technology.
-Another comment would be on one of the main reasons why this conversion is so slow. There are so many regulations: CNIL, Europe, that is specialist of regulating before innovating. New firms in the private sector are more prone to navigate this but we will do our best."
+  Another comment would be on one of the main reasons why this conversion is so slow. There are so many regulations: CNIL, Europe, that is specialist of regulating before innovating. New firms in the private sector are more prone to navigate this but we will do our best."
 
 Advice research:
 - IHEDN
