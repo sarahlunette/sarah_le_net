@@ -44,18 +44,4 @@ if sidebar==pages[2]:
 if sidebar==pages[10]:
     st.title('CNAM')
     st.markdown(f'<a href="https://docs.google.com/presentation/d/1F1t67TK6D-fCbuYQ6IoT_T6-wQ2aN2eTbr2cA3qLWPI/edit?usp=sharing">📄 Ouvrir la présentation</a>', unsafe_allow_html=True)
-    # Chemin vers ton fichier PDF
-    pdf_path = "CNAM/projet_expoped.pdf"
-
-
-    #Faire une fonction avec le display
-    with open(pdf_path,"rb") as f:
-      base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    
-    pdf_data = base64.b64encode(open(pdf_path, "rb").read()).decode('utf-8')
-    href = f'<a href="data:application/pdf;base64,{pdf_data}" target="_blank">📄 Ouvrir le PDF dans un nouvel onglet</a>'
-    st.markdown(href, unsafe_allow_html=True)
-
-    '''pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'   
-    st.markdown(pdf_display, unsafe_allow_html=True)'''
 
