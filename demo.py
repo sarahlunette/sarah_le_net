@@ -1,8 +1,9 @@
-import streamlit as streamlit
+import streamlit as st
+import os
 st.title('Sarah LE NET blogpost')
 pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackatons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography']
 p_interest = ['Interviews', 'State-of-the-art', 'Articles']
-hackatons = ['GeoHack AI','AI Action Summit', 'Women in Data Science', 'Microsoft AI Agents - Emergency App']
+hackatons = ['GeoHack AI','AI Action Summit', 'Women in Data Science', 'Microsoft AI Agents - Emergency App', 'Social Media for Emergency Crisis', 'Climate Relief to Resilience']
 articles = ['Environment', 'Data and Tech', 'Entrepreneurship', 'Events and discoveries']
 teaching = ['Data Engineering', 'MLOPS', 'Data Science']
 trips = ['South America', 'Greece']
