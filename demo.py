@@ -51,7 +51,7 @@ if sidebar==pages[10]:
     with open(pdf_path,"rb") as f:
       base64_pdf = base64.b64encode(f.read()).decode('utf-8')
     
-    pdf_data = base64.b64encode(open("your_file.pdf", "rb").read()).decode('utf-8')
+    pdf_data = base64.b64encode(open(pdf_path, "rb").read()).decode('utf-8')
     href = f'<a href="data:application/pdf;base64,{pdf_data}" target="_blank">📄 Ouvrir le PDF dans un nouvel onglet</a>'
     st.markdown(href, unsafe_allow_html=True)
 
