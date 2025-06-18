@@ -29,3 +29,16 @@ with open(f"articles/{selected_article}", "r", encoding="utf-8") as file:
 st.title(selected_article.replace('.txt', '').replace('_', ' '))
 st.write(content)
 
+# Chemin vers ton fichier PDF
+pdf_path = "CNAM/"Projet Expo'ped""
+
+# Ouvrir le fichier PDF et l'encoder en base64
+import base64
+with open(pdf_path, "rb") as f:
+    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+
+# Afficher dans une iframe HTML
+pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+st.components.v1.html(pdf_display, height=1000)
+
+
