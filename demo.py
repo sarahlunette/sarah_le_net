@@ -5,7 +5,8 @@ import urllib.parse
 
 st.title('The Lab')
 st.header('by Sarah LE NET')
-pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackathons', 'Articles and Reposts', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM', 'Trips', 'Theater', 'Photography']
+st.markdown('Inspired by passions and interests, I started writing this blog while doign a state-of-the-art of prevention of natural risks and crises response as well as GenAI in healthcare. It turned out a lot of what has been done is valuable and I would love to present it to you.')
+pages = ['Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
 
 st.sidebar.markdown(
     "<h3 style='font-size:32px;'>PROJECTS</h3>", 
@@ -13,7 +14,11 @@ st.sidebar.markdown(
 )
 sidebar = st.sidebar.radio("", pages)
 
-p_interest = ['Interviews', 'State-of-the-art', 'Articles']
+p_articles = ['Interviews', 'State-of-the-art', 'Articles']
+p_entrepreneurship = ['The Bubble', 'The Lab']
+p_trips = ['South America', 'Sri Lanka', 'Italy']
+p_theater = ['Workshops', 'Plays', 'Puppets']
+
 
 hackathons = ['GeoHack AI', 'FrugalAI', "Bat'Adapt",
              'AI Action Summit',
