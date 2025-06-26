@@ -87,7 +87,7 @@ if sidebar==pages[2]:
         content = file.read()
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
-    st.write(content)
+    t.code(content, language="text")
 
 if sidebar==pages[5]:
     st.title('CNAM')
