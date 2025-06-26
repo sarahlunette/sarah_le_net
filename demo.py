@@ -18,14 +18,24 @@ p_trips = ['South America', 'Sri Lanka', 'Italy']
 p_theater = ['Workshops', 'Plays', 'Puppets']
 
 
-hackathons = ['GeoHack AI', 'FrugalAI', "Bat'Adapt",
+hackathons = ['GeoHack AI', 'FrugalAI', "Bat'Adapt", 'SAM API',
+             'Tsunamis Project',
              'AI Action Summit',
              'Women in Data Science', 
              'Microsoft AI Agents - Emergency App', 
              'Social Media for Resource Allocation in Emergency Crisis', 
              'ESPF, Survival Projection of Railways in Climate Change', 
-             'Climate Relief to Resilience']
-repo_names = ['GeoAIHack_team_18', ]
+             'Climate Relief to Resilience',
+             'PyTorch Tsunamis']
+repo_names = ['GeoAIHack_team_18', 'FrugalAI', 'bat', 'sam_api',
+              'Tsunamis_Project',
+              'Doctolib_Hackaton',
+              'WiDS-AI-Potter-Irrigation',
+              'microsoft_ai_agents',
+              'IBM_Hackaton',
+              'ESPF',
+              'resilience2reliefai',
+              'pytorch_tsunamis']
 
 articles = ['Environment', 'Data and Tech', 'Entrepreneurship', 'Events and discoveries']
 
@@ -36,31 +46,6 @@ entrepreneurship = ['The Bubble', '?']
 
 # Récupérer la liste des fichiers .txt
 article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
-
-
-def display_repo_structure(repo, path="", indent=0):
-    try:
-        contents = repo.get_contents(path)
-    except Exception as e:
-        st.error(f"Error accessing {path}: {e}")
-        return
-
-    # Sort: directories first, then files
-    contents.sort(key=lambda x: (x.type != "dir", x.name.lower()))
-
-    for content in contents:
-        if content.name.startswith("."):  # skip hidden/system files
-            continue
-
-        # Use 4x non-breaking space per indent level
-        spacer = "&nbsp;" * 4 * indent
-
-        if content.type == "dir":
-            st.markdown(f"{spacer}• [{content.name}]({content.html_url})", unsafe_allow_html=True)
-            display_repo_structure(repo, content.path, indent + 1)
-        else:
-            st.markdown(f"{spacer}* [{content.name}]({content.html_url})", unsafe_allow_html=True)
-
 
 if sidebar==pages[0]:
     st.title('The Lab')
@@ -76,7 +61,7 @@ if sidebar == pages[1]:
 
             # Initialize GitHub client (no token needed for public repos)
             g = Github()
-            repo = g.get_repo("sarahlunette/" + repo_names[i])
+            repo = g.get_repo("sarahlunette/" + repo_names[i], token='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')
 
             # Get README.md content
             readme_file = repo.get_readme()
