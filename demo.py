@@ -83,7 +83,7 @@ if sidebar==pages[2]:
     selected_article = st.selectbox("Choose an article", article_files)
 
     # Charger et afficher l'article sélectionné
-    with open(f"articles/{selected_article}", "r", encoding="utf-8") as file:
+    with open(f"articles/{selected_article}.txt", "r", encoding="utf-8") as file:
         content = file.read()
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
