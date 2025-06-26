@@ -90,7 +90,7 @@ if sidebar==pages[2]:
     st.markdown(
         f"""
         <pre style='background-color:#f6f8fa; padding:10px; border-radius:6px; font-size:14px'>
-    {contenu}
+    {content}
         </pre>
         """,
         unsafe_allow_html=True
