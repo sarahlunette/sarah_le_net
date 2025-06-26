@@ -6,7 +6,7 @@ import urllib.parse
 st.title('The Lab')
 st.header('by Sarah LE NET')
 st.markdown('Inspired by passions and interests, I started writing this blog while doign a state-of-the-art of prevention of natural risks and crises response as well as GenAI in healthcare. It turned out a lot of what has been done is valuable and I would love to present it to you.')
-pages = ['Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
+pages = ['Presentation', 'Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
 
 st.sidebar.markdown(
     "<h3 style='font-size:32px;'>PROJECTS</h3>", 
@@ -39,7 +39,7 @@ entrepreneurship = ['The Bubble', '?']
 article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
 
 # Afficher une liste déroulante pour choisir un article
-if sidebar==pages[1]:
+if sidebar==pages[2]:
     selected_article = st.selectbox("Choose an article", article_files)
 
     # Charger et afficher l'article sélectionné
@@ -49,10 +49,10 @@ if sidebar==pages[1]:
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
     st.write(content)
 
-if sidebar==pages[0]:
+if sidebar==pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
-if sidebar==pages[4]:
+if sidebar==pages[5]:
     st.title('CNAM')
     st.header('Slides (French Version)')
     st.markdown(f'<a href="https://docs.google.com/presentation/d/1F1t67TK6D-fCbuYQ6IoT_T6-wQ2aN2eTbr2cA3qLWPI/edit?usp=sharing">📄 Open presentation</a>', unsafe_allow_html=True)
