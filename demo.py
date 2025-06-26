@@ -3,6 +3,10 @@ import os
 import base64
 import urllib.parse
 from github import Github
+from dotenv import load_dotenv
+
+load_dotenv()
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 pages = ['Presentation', 'Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
 
@@ -61,7 +65,7 @@ if sidebar == pages[1]:
 
             # Initialize GitHub client (no token needed for public repos)
             g = Github()
-            repo = g.get_repo("sarahlunette/" + repo_names[i], token='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')
+            repo = g.get_repo("sarahlunette/" + repo_names[i], token=GITHUB_TOKEN)
 
             # Get README.md content
             readme_file = repo.get_readme()
