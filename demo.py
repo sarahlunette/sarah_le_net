@@ -39,16 +39,28 @@ article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
 
 
 def display_repo_structure(repo, path="", indent=0):
-    contents = repo.get_contents(path)
+    try:
+        contents = repo.get_contents(path)
+    except Exception as e:
+        st.error(f"Error accessing {path}: {e}")
+        return
+
+    # Sort: directories first, then files
+    contents.sort(key=lambda x: (x.type != "dir", x.name.lower()))
+
     for content in contents:
-        spacer = " " * indent  # EM SPACE for indentation
+        if content.name.startswith("."):  # skip hidden/system files
+            continue
+
+        # Use 4x non-breaking space per indent level
+        spacer = "&nbsp;" * 4 * indent
+
         if content.type == "dir":
-            # Folder: bullet + link to folder in GitHub UI
-            st.markdown(f"{spacer}• [{content.name}]({content.html_url})")
+            st.markdown(f"{spacer}• [{content.name}]({content.html_url})", unsafe_allow_html=True)
             display_repo_structure(repo, content.path, indent + 1)
         else:
-            # File: star + link to file
-            st.markdown(f"{spacer}* [{content.name}]({content.html_url})")
+            st.markdown(f"{spacer}* [{content.name}]({content.html_url})", unsafe_allow_html=True)
+
 
 if sidebar==pages[0]:
     st.title('The Lab')
@@ -59,7 +71,7 @@ if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
     if selected_hackathons == hackathons[0]:
-        g = Github()  # or Github("your_token") for private repos
+        g = Github()  # Add token if accessing private repos: Github("your_token")
         repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
 
         st.title(repo.name)
