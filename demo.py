@@ -39,7 +39,7 @@ entrepreneurship = ['The Bubble', '?']
 article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
 
 # Afficher une liste déroulante pour choisir un article
-if sidebar==pages[3]:
+if sidebar==pages[1]:
     selected_article = st.selectbox("Choose an article", article_files)
 
     # Charger et afficher l'article sélectionné
@@ -49,10 +49,10 @@ if sidebar==pages[3]:
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
     st.write(content)
 
-if sidebar==pages[2]:
+if sidebar==pages[0]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
-if sidebar==pages[10]:
+if sidebar==pages[4]:
     st.title('CNAM')
     st.header('Slides (French Version)')
     st.markdown(f'<a href="https://docs.google.com/presentation/d/1F1t67TK6D-fCbuYQ6IoT_T6-wQ2aN2eTbr2cA3qLWPI/edit?usp=sharing">📄 Open presentation</a>', unsafe_allow_html=True)
