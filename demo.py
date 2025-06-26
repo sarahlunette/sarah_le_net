@@ -6,7 +6,7 @@ import urllib.parse
 st.title('The Lab')
 st.header('by Sarah LE NET')
 pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackathons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography', 'CNAM']
-sidebar = st.sidebar.selectbox("Projects", pages)
+sidebar = st.sidebar.radio("Projects", pages)
 
 p_interest = ['Interviews', 'State-of-the-art', 'Articles']
 
