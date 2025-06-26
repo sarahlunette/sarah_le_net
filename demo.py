@@ -66,7 +66,7 @@ if sidebar == pages[1]:
 
             # Initialize GitHub client (no token needed for public repos)
             g = Github(auth=auth)
-            repo = g.get_repo("sarahlunette/" + repo_names[i], token=GITHUB_TOKEN)
+            repo = g.get_repo("sarahlunette/" + repo_names[i])
 
             # Get README.md content
             readme_file = repo.get_readme()
