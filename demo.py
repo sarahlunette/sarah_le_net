@@ -62,9 +62,10 @@ if sidebar == pages[1]:
     for i in range(len(hackathons)):
         if selected_hackathons == hackathons[i]:
             st.link_button("🌐 View on GitHub", "https://github.com/sarahlunette/" + repo_names[i])
+            auth = Auth.Login("sarahlunette", GITHUB_TOKEN)
 
             # Initialize GitHub client (no token needed for public repos)
-            g = Github()
+            g = Github(auth=auth)
             repo = g.get_repo("sarahlunette/" + repo_names[i], token=GITHUB_TOKEN)
 
             # Get README.md content
