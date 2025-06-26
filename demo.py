@@ -5,8 +5,12 @@ import urllib.parse
 
 st.title('The Lab')
 st.header('by Sarah LE NET')
-pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackathons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography', 'CNAM']
-sidebar = st.sidebar.radio("Projects", pages)
+pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackathons', 'Articles and Reposts', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM', 'Trips', 'Theater', 'Photography']
+st.sidebar.markdown(
+    "<h3 style='font-size:24px;'>PROJECTS</h3>", 
+    unsafe_allow_html=True
+)
+sidebar = st.sidebar.radio("", pages)
 
 p_interest = ['Interviews', 'State-of-the-art', 'Articles']
 
