@@ -57,7 +57,7 @@ if sidebar==pages[0]:
 
 if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
-    for i in range(len(hackatons)):
+    for i in range(len(hackathons)):
         if selected_hackathons == hackathons[i]:
             g = Github()  # optionally use Github("your_token") if private
             repo = g.get_repo("sarahlunette/" + repo_names[i])
