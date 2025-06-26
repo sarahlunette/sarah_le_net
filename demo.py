@@ -50,7 +50,7 @@ career = ['Endeavor', 'CV', 'Certifications', 'University Projects', 'Portfolio'
 entrepreneurship = ['The Bubble', '?']
 
 # Récupérer la liste des fichiers .txt
-article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
+article_files = [f.split('.')[0] for f in os.listdir("articles") if f.endswith(".txt")]
 
 if sidebar==pages[0]:
     st.title('The Lab')
