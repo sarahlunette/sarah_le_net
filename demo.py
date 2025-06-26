@@ -66,7 +66,7 @@ if sidebar == pages[1]:
             st.write(repo.description)
 
             root_contents = repo.get_contents("")
-            display_contents(root_contents)
+            display_repo_structure(root_contents)
 
 
 # Afficher une liste déroulante pour choisir un article
