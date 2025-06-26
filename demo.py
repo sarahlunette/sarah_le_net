@@ -57,16 +57,16 @@ if sidebar==pages[0]:
 
 if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
-    for i in range(len(hackathons)):
-        if selected_hackathons == hackathons[i]:
-            g = Github()  # optionally use Github("your_token") if private
-            repo = g.get_repo("sarahlunette/" + repo_names[i])
 
-            st.title(repo.name)
-            st.write(repo.description)
+    if selected_hackathons == hackathons[0]:
+        g = Github()  # or Github("your_token") for private repos
+        repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
 
-            root_contents = repo.get_contents("")
-            display_repo_structure(root_contents)
+        st.title(repo.name)
+        st.write(repo.description)
+
+        st.markdown("### 📂 Repository Structure")
+        display_repo_structure(repo)
 
 
 # Afficher une liste déroulante pour choisir un article
