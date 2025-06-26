@@ -76,15 +76,15 @@ if sidebar == pages[1]:
 
         st.title("📁 GitHub Repository View")
         st.components.v1.iframe(github_url, height=800, scrolling=True)
-        
-        g = Github()  # Add token if accessing private repos: Github("your_token")
+
+        '''g = Github()  # Add token if accessing private repos: Github("your_token")
         repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
 
         st.title(repo.name)
         st.write(repo.description)
 
         st.markdown("### 📂 Repository Structure")
-        display_repo_structure(repo)
+        display_repo_structure(repo)'''
 
 
 # Afficher une liste déroulante pour choisir un article
