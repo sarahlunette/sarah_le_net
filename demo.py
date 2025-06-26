@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import base64
 import urllib.parse
+from github import Github
 
 pages = ['Presentation', 'Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
 
@@ -42,6 +43,18 @@ if sidebar==pages[0]:
 
 if sidebar==pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
+
+    if selected_hackathons=hackahons[0]:
+        g = Github()  # or Github("your_token") for private repos
+        repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
+
+        st.title(repo.name)
+        st.write(repo.description)
+
+        contents = repo.get_contents("")
+        for file in contents:
+            st.write(f"{file.type.upper()}: [{file.name}]({file.html_url})")
+
 
 # Afficher une liste déroulante pour choisir un article
 if sidebar==pages[2]:
