@@ -70,21 +70,21 @@ if sidebar==pages[0]:
 if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
-    if selected_hackathons == hackathons[0]:
+    for i in range(len(hackathons)):
+        if selected_hackathons == hackathons[i]:
+            st.link_button("🌐 View on GitHub", "https://github.com/sarahlunette/" + repo_names[i])
 
-        github_url = "https://github.com/sarahlunette/GeoAIHack_team_18"
+            # Initialize GitHub client (no token needed for public repos)
+            g = Github()
+            repo = g.get_repo("sarahlunette/" + repo_names[i])
 
-        st.title("📁 GitHub Repository View")
-        st.components.v1.iframe(github_url, height=800, scrolling=True)
+            # Get README.md content
+            readme_file = repo.get_readme()
+            readme_content = readme_file.decoded_content.decode()
 
-        '''g = Github()  # Add token if accessing private repos: Github("your_token")
-        repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
-
-        st.title(repo.name)
-        st.write(repo.description)
-
-        st.markdown("### 📂 Repository Structure")
-        display_repo_structure(repo)'''
+            # Render as Markdown
+            st.markdown("# 📄 README")
+            st.markdown(readme_content, unsafe_allow_html=True)
 
 
 # Afficher une liste déroulante pour choisir un article
