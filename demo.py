@@ -3,7 +3,8 @@ import os
 import base64
 import urllib.parse
 
-st.title('Sarah LE NET blogpost')
+st.title('The Lab')
+st.header('by Sarah LE NET')
 pages = ['Natural Risks Prevention and Emergency Crisis', 'Health', 'Hackathons', 'Articles and Reposts', 'Teaching', 'Trips', 'Theater', 'Career', 'Entrepreneurship', 'Photography', 'CNAM']
 sidebar = st.sidebar.selectbox("Projects", pages)
 
