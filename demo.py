@@ -71,6 +71,12 @@ if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
     if selected_hackathons == hackathons[0]:
+
+        github_url = "https://github.com/sarahlunette/GeoAIHack_team_18"
+
+        st.title("📁 GitHub Repository View")
+        st.components.v1.iframe(github_url, height=800, scrolling=True)
+        
         g = Github()  # Add token if accessing private repos: Github("your_token")
         repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
 
