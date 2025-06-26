@@ -50,7 +50,7 @@ career = ['Endeavor', 'CV', 'Certifications', 'University Projects', 'Portfolio'
 entrepreneurship = ['The Bubble', '?']
 
 # Récupérer la liste des fichiers .txt
-article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
+article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
 
 if sidebar==pages[0]:
     st.title('The Lab')
@@ -83,11 +83,18 @@ if sidebar==pages[2]:
     selected_article = st.selectbox("Choose an article", article_files)
 
     # Charger et afficher l'article sélectionné
-    with open(f"articles/{selected_article}", "r", encoding="utf-8") as file:
+    with open(f"articles/{selected_article}.txt", "r", encoding="utf-8") as file:
         content = file.read()
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
-    st.write(content)
+    st.markdown(
+        f"""
+        <pre style='background-color:#f6f8fa; padding:10px; border-radius:6px; font-size:14px'>
+    {content}
+        </pre>
+        """,
+        unsafe_allow_html=True
+    )
 
 if sidebar==pages[5]:
     st.title('CNAM')
