@@ -25,6 +25,7 @@ hackathons = ['GeoHack AI', 'FrugalAI', "Bat'Adapt",
              'Social Media for Resource Allocation in Emergency Crisis', 
              'ESPF, Survival Projection of Railways in Climate Change', 
              'Climate Relief to Resilience']
+repo_names = ['GeoAIHack_team_18', ]
 
 articles = ['Environment', 'Data and Tech', 'Entrepreneurship', 'Events and discoveries']
 
@@ -56,16 +57,16 @@ if sidebar==pages[0]:
 
 if sidebar == pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
+    for i in range(len(hackatons)):
+        if selected_hackathons == hackathons[i]:
+            g = Github()  # optionally use Github("your_token") if private
+            repo = g.get_repo("sarahlunette/" + repo_names[i])
 
-    if selected_hackathons == hackathons[0]:
-        g = Github()  # optionally use Github("your_token") if private
-        repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
+            st.title(repo.name)
+            st.write(repo.description)
 
-        st.title(repo.name)
-        st.write(repo.description)
-
-        root_contents = repo.get_contents("")
-        display_contents(root_contents)
+            root_contents = repo.get_contents("")
+            display_contents(root_contents)
 
 
 # Afficher une liste déroulante pour choisir un article
