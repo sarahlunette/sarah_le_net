@@ -3,9 +3,6 @@ import os
 import base64
 import urllib.parse
 
-st.title('The Lab')
-st.header('by Sarah LE NET')
-st.markdown('Inspired by passions and interests, I started writing this blog while working on a state-of-the-art of data in prevention of natural risks and crises response as well as GenAI in Healthcare. It turned out a lot of what has been done is valuable and I would love to present it to you.')
 pages = ['Presentation', 'Hackathons', 'Articles', 'Teaching', 'Career', 'Entrepreneurship', 'CNAM: Metrology and Citizen Sciences', 'Trips', 'Theater', 'Photography']
 
 st.sidebar.markdown(
@@ -38,6 +35,14 @@ entrepreneurship = ['The Bubble', '?']
 # Récupérer la liste des fichiers .txt
 article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
 
+if sidebar==pages[0]:
+    st.title('The Lab')
+    st.header('by Sarah LE NET')
+    st.markdown('Inspired by passions and interests, I started writing this blog while working on a state-of-the-art of data in prevention of natural risks and crises response as well as GenAI in Healthcare. It turned out a lot of what has been done is valuable and I would love to present it to you.')
+
+if sidebar==pages[1]:
+    selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
+
 # Afficher une liste déroulante pour choisir un article
 if sidebar==pages[2]:
     selected_article = st.selectbox("Choose an article", article_files)
@@ -48,9 +53,6 @@ if sidebar==pages[2]:
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
     st.write(content)
-
-if sidebar==pages[1]:
-    selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
 if sidebar==pages[5]:
     st.title('CNAM')
