@@ -4,6 +4,7 @@ import base64
 import urllib.parse
 from github import Github
 from dotenv import load_dotenv
+from github import Auth
 
 load_dotenv()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
