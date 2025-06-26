@@ -38,17 +38,17 @@ entrepreneurship = ['The Bubble', '?']
 article_files = [f for f in os.listdir("articles") if f.endswith(".txt")]
 
 
-def display_contents(contents, indent=0):
+def display_repo_structure(repo, path="", indent=0):
+    contents = repo.get_contents(path)
     for content in contents:
-        prefix = "•" if content.type == "dir" else "*"
-        spacer = " " * indent  # Use a Unicode EM SPACE for better alignment
-
+        spacer = " " * indent  # EM SPACE for indentation
         if content.type == "dir":
-            st.markdown(f"{spacer}{prefix} {content.name}")
-            sub_contents = repo.get_contents(content.path)
-            display_contents(sub_contents, indent + 1)
+            # Folder: bullet + link to folder in GitHub UI
+            st.markdown(f"{spacer}• [{content.name}]({content.html_url})")
+            display_repo_structure(repo, content.path, indent + 1)
         else:
-            st.markdown(f"{spacer}{prefix} [{content.name}]({content.html_url})")
+            # File: star + link to file
+            st.markdown(f"{spacer}* [{content.name}]({content.html_url})")
 
 if sidebar==pages[0]:
     st.title('The Lab')
