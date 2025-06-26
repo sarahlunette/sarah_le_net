@@ -44,7 +44,7 @@ if sidebar==pages[0]:
 if sidebar==pages[1]:
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
-    if selected_hackathons==hackahons[0]:
+    if selected_hackathons==hackathons[0]:
         g = Github()  # or Github("your_token") for private repos
         repo = g.get_repo("sarahlunette/GeoAIHack_team_18")
 
