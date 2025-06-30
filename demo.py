@@ -83,8 +83,9 @@ import streamlit.components.v1 as components
 
 # Afficher une liste déroulante pour choisir un article
 if sidebar == pages[2]:
-    language = st.sidebar.selectbox("Choose a language", ["French", "English"])
-    if language == "French":
+    language = st.sidebar.selectbox("Choose a language", ["Français", "English"])
+    if language == "Français":
+        language = "French"
         article_files = [f.replace(".html", "").replace("_", " ").replace("(French_Version)", "") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(French_Version)")]
     else:
         article_files = [f.replace(".html", "").replace("_", " ").replace("(English_Version)", "") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(English_Version)")]
