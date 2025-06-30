@@ -102,18 +102,20 @@ if sidebar == pages[2]:
 if sidebar == pages[3]:
     st.title('Teaching')
     st.header('Data Workshops')
+    selected_video = st.sidebar.selectbox("Choose a video", ["Principal Component Analysis", "Multibox Detection", "Multi-threading, multi-processing, and computing power/costs in ML"])
 
-    youtube_url = "https://www.youtube.com/watch?v=n9GORRPxnC0&ab_channel=DataScientest"
-    st.markdown(f'Principal Component Analysis', unsafe_allow_html=True)
-    st.video(youtube_url)
-
-    '''youtube_url = "https://www.youtube.com/watch?v=nK_z7bw3CZs&ab_channel=DataScientest"
-    st.markdown(f'Multibox Detection', unsafe_allow_html=True)
-    st.video(youtube_url)
-
-    youtube_url = "https://www.youtube.com/watch?v=aO5xc_R0JKQ&ab_channel=DataScientest"
-    st.markdown(f'Multi-threading, multi-processing, and computing power/costs in ML', unsafe_allow_html=True)
-    st.video(youtube_url)'''
+    if selected_video == "Principal Component Analysis":
+        youtube_url = "https://www.youtube.com/watch?v=n9GORRPxnC0&ab_channel=DataScientest"
+        st.markdown(f'Principal Component Analysis', unsafe_allow_html=True)
+        st.video(youtube_url)
+    elif selected_video == "Multibox Detection":
+        youtube_url = "https://www.youtube.com/watch?v=nK_z7bw3CZs&ab_channel=DataScientest"
+        st.markdown(f'Multibox Detection', unsafe_allow_html=True)
+        st.video(youtube_url)
+    else:
+        youtube_url = "https://www.youtube.com/watch?v=aO5xc_R0JKQ&ab_channel=DataScientest"
+        st.markdown(f'Multi-threading, multi-processing, and computing power/costs in ML', unsafe_allow_html=True)
+        st.video(youtube_url)
 
 if sidebar==pages[6]:
     st.title('CNAM')
