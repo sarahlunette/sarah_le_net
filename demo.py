@@ -87,14 +87,7 @@ if sidebar==pages[2]:
         content = file.read()
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
-    st.markdown(
-        f"""
-        <pre style='background-color:#f6f8fa; padding:10px; border-radius:6px; font-size:14px'>
-    {content}
-        </pre>
-        """,
-        unsafe_allow_html=True
-    )
+    st.text(content)
 
 if sidebar==pages[5]:
     st.title('CNAM')
