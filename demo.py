@@ -94,18 +94,6 @@ if sidebar == pages[2]:
     components.html(html_content, height=800, scrolling=True)
 
 
-
-'''# Afficher une liste déroulante pour choisir un article
-if sidebar==pages[2]:
-    selected_article = st.selectbox("Choose an article", article_files)
-
-    # Charger et afficher l'article sélectionné
-    with open(f"articles/{selected_article}.txt", "r", encoding="utf-8") as file:
-        content = file.read()
-
-    st.title(selected_article.replace('.txt', '').replace('_', ' '))
-    st.text(content)'''
-
 if sidebar==pages[6]:
     st.title('CNAM')
     st.header('Slides (French Version)')
