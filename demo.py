@@ -86,9 +86,9 @@ if sidebar == pages[2]:
     language = st.sidebar.selectbox("Choose a language", ["Français", "English"])
     if language == "Français":
         language = "French"
-        article_files = [f.replace(".html", "").replace("_", " ").replace("(French_Version)", "") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(French_Version)")]
+        article_files = [f.replace(".html", "").replace("(French_Version)", "").replace("_", " ") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(French_Version)")]
     else:
-        article_files = [f.replace(".html", "").replace("_", " ").replace("(English_Version)", "") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(English_Version)")]
+        article_files = [f.replace(".html", "").replace("(English_Version)", "").replace("_", " ") for f in os.listdir("articles") if f.endswith(".html") & f.replace(".html", "").endswith("(English_Version)")]
 
     selected_article = st.sidebar.selectbox("Choose an article", article_files).replace(" ", "_").replace("(French_Version)", "").replace("(English_Version)", "")
 
