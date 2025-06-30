@@ -92,7 +92,7 @@ if sidebar == pages[2]:
     selected_article = st.sidebar.selectbox("Choose an article", article_files).replace(" ", "_").replace("(French_Version)", "").replace("(English_Version)", "")
 
     # Charger et afficher l'article HTML sélectionné
-    with open(f"articles/{selected_article}.html", "r", encoding="utf-8") as file:
+    with open(f"articles/{selected_article}({language}_Version).html", "r", encoding="utf-8") as file:
         html_content = file.read()
 
     st.title(selected_article.replace('_', ' '))
