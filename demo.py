@@ -83,6 +83,7 @@ import streamlit.components.v1 as components
 
 # Afficher une liste déroulante pour choisir un article
 if sidebar == pages[2]:
+    st.sidebar.selectbox("Choose an article", article_files)
     article_files = [f.replace(".html", "") for f in os.listdir("articles") if f.endswith(".html")]
     selected_article = st.selectbox("Choose an article", article_files)
 
