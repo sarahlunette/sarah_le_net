@@ -77,8 +77,25 @@ if sidebar == pages[1]:
             st.markdown("# 📄 README")
             st.markdown(readme_content, unsafe_allow_html=True)
 
+import streamlit as st
+import os
+import streamlit.components.v1 as components
 
 # Afficher une liste déroulante pour choisir un article
+if sidebar == pages[2]:
+    article_files = [f.replace(".html", "") for f in os.listdir("articles") if f.endswith(".html")]
+    selected_article = st.selectbox("Choose an article", article_files)
+
+    # Charger et afficher l'article HTML sélectionné
+    with open(f"articles/{selected_article}.html", "r", encoding="utf-8") as file:
+        html_content = file.read()
+
+    st.title(selected_article.replace('_', ' '))
+    components.html(html_content, height=800, scrolling=True)
+
+
+
+'''# Afficher une liste déroulante pour choisir un article
 if sidebar==pages[2]:
     selected_article = st.selectbox("Choose an article", article_files)
 
@@ -87,7 +104,7 @@ if sidebar==pages[2]:
         content = file.read()
 
     st.title(selected_article.replace('.txt', '').replace('_', ' '))
-    st.text(content)
+    st.text(content)'''
 
 if sidebar==pages[6]:
     st.title('CNAM')
