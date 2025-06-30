@@ -99,6 +99,21 @@ if sidebar == pages[2]:
     st.title(selected_article.replace('_', ' '))
     components.html(html_content, height=800, scrolling=True)
 
+if sidebar == pages[3]:
+    st.title('Teaching')
+    st.header('Data Workshops')
+
+    youtube_url = "https://www.youtube.com/watch?v=n9GORRPxnC0&ab_channel=DataScientest"
+    st.markdown(f'Principal Component Analysis', unsafe_allow_html=True)
+    st.video(youtube_url)
+
+    youtube_url = "https://www.youtube.com/watch?v=nK_z7bw3CZs&ab_channel=DataScientest"
+    st.markdown(f'Multibox Detection', unsafe_allow_html=True)
+    st.video(youtube_url)
+
+    youtube_url = "https://www.youtube.com/watch?v=aO5xc_R0JKQ&ab_channel=DataScientest"
+    st.markdown(f'Multi-threading, multi-processing, and computing power/costs in ML', unsafe_allow_html=True)
+    st.video(youtube_url)
 
 if sidebar==pages[6]:
     st.title('CNAM')
