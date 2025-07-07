@@ -126,6 +126,6 @@ if sidebar==pages[6]:
     st.markdown(f'<a href="https://docs.google.com/document/d/165F-R3qm1RqhEpT7p1xB6oqRg3C_9l8VB-Bz-cO7gXg/edit?tab=t.0">📄 Open rendering</a>', unsafe_allow_html=True)
 
 if sidebar==pages[7]:
-    st.title('Articles from La Jaune et La Rouge, Polytechnique's Magazine')
+    st.title("Articles from La Jaune et La Rouge, Polytechnique's Magazine")
     st.header('Storio, Energy Storage Company by X2010')
     st.markdown(f'<a href="https://www.lajauneetlarouge.com/il-manquait-une-technologie-dans-le-paysage-du-stockage-denergie-en-france-caroline-le-floch-gautier-maigret-jean-yves-stephan-et-julien-dumazert-tous-x10-et-cofondateurs-de/">📄 Open presentation</a>', unsafe_allow_html=True)
