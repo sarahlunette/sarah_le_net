@@ -221,7 +221,23 @@ if sidebar == pages[10]:
         ("https://lh3.googleusercontent.com/pw/AP1GczMeZkBYKc9j2SFzndcOkawoDle2kxN2NwT9j6nO9lJLpnd4rtYXBF95OiJm6x9xmWGC8MUHJqKNxAURQbqXVu6KfML9PmbXZQTRBO-_r_Q0G4x90FX3wUzdAH8oDUBQerQvXD-P0TohPiWwzim12GlEBA=w1962-h1478-s-no-gm?authuser=0", "Ferry Bari"),
     ]
 
-    for image_url, caption in image_urls:
+    # Build HTML content
+    html_content = "<div id='scroll-container' style='height:80vh; overflow-y: auto;'>"
+    for url, caption in image_urls:
+        html_content += f"<div style='margin-bottom: 20px;'><img src='{url}' style='width:100%; max-width:800px;'><p>{caption}</p></div>"
+    html_content += "</div>"
+
+    # Add JavaScript to scroll to the bottom after the container loads
+    html_content += """
+    <script>
+    const container = document.getElementById('scroll-container');
+    container.scrollTop = container.scrollHeight;
+    </script>
+    """
+
+    components.html(html_content, height=700)
+    
+    '''for image_url, caption in image_urls:
         print(image_url, caption)
         st.image(image_url, caption=caption)
 
@@ -235,4 +251,4 @@ if sidebar == pages[10]:
     }
     </script>
     """
-    components.html(scroll_js)
+    components.html(scroll_js)'''
