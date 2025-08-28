@@ -211,11 +211,37 @@ if sidebar == pages[5]:
     selected_item = st.selectbox("Choose a project", entrepreneurship)
 
     if selected_item == "The Bubble":
-        st.header("The Bubble, Incubator for Startups")
-        st.markdown(
-            f'<a href="https://thebubble.fr/">🌐 View The Bubble</a>',
-            unsafe_allow_html=True,
-        )
+        st.header("The Bubble, Coworking Space with Daycare")
+        selection = st.selectbox("Choose a program", ["Sista", "LFA Funds", "Grandes Ecoles Au Féminin", "Empow'Her" ])
+        
+        if selection == "Sista":
+            st.header("Sista Incubator Interviews")
+            st.markdown(
+                f'<a href="https://drive.google.com/file/d/1C9PNTzMqSl9ZqF5N2ZHRPkrnrEZRUBDr/view?usp=sharing">🌐 Presentation Video</a>',
+                unsafe_allow_html=True,)
+
+        if selection == "LFA Funds":
+            st.header("LFA Funds Interviews - Passed")
+            st.markdown(
+                f'<a href="https://docs.google.com/presentation/d/1QVvzZKSw53ftSpOCNvsqHaUnoTFsip1PPyLWAmdAhw4/edit?usp=sharing">🌐 Presentation Slides First Interview</a>',
+                unsafe_allow_html=True,)
+            st.markdown(
+                f'<a href="https://drive.google.com/file/d/1MTj82NeF25V7NCvF5KBWLG0mBv5gaYf6/view?usp=sharing">🌐 Presentation Slides Second Interview</a>',
+            )
+        
+        if selection == "Grandes Ecoles Au Féminin":
+            st.header("Concours Startup Grandes Ecoles Au Féminin")
+            st.markdown(
+                f'<a href="https://www.gefstartup.com/">🌐 Empow\'Her Website</a>',
+                unsafe_allow_html=True,
+            )
+           
+        if selection == "Empow'Her":
+            st.header("Business Plan and Definition of the Project Workshop")
+            st.markdown(
+                f'<a href="https://empow-her.com/">🌐 Empow\'Her Website</a>',
+                unsafe_allow_html=True,
+            )
 
     elif selected_item == "TheLab AI":
         st.header("TheLab AI, resilienceAI")
@@ -234,7 +260,6 @@ if sidebar == pages[5]:
             f'<a href="https://docs.google.com/document/d/1oN0aXKn18-BLT67qKn_HNoH7-VxB8cYJW8_n-93GwVg/edit?usp=sharing">🌐 DataCapture</a>',
             unsafe_allow_html=True,
         )
-        st.image("images/the_lab.png", use_column_width=True)
 
 if sidebar == pages[6]:
     st.title("CNAM")
@@ -267,7 +292,6 @@ if sidebar == pages[8]:
 
     elif selected_trip == "Greece 2017":
         st.title("Greece 2017")
-        st.write("Greek Language and Culture / In construction")
         
 if sidebar == pages[9]:
     selected_year = st.selectbox("Select a Year", ['First Year', 'Second Year'])
