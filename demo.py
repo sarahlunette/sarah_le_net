@@ -232,7 +232,7 @@ if sidebar == pages[5]:
         if selection == "Grandes Ecoles Au Féminin":
             st.header("Concours Startup Grandes Ecoles Au Féminin")
             st.markdown(
-                f'<a href="https://www.gefstartup.com/">🌐 Empow\'Her Website</a>',
+                f'<a href="https://www.gefstartup.com/">🌐 Grandes Ecoles Au Féminin</a>',
                 unsafe_allow_html=True,
             )
            
