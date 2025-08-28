@@ -5,7 +5,6 @@ import urllib.parse
 from github import Github
 from dotenv import load_dotenv
 from github import Auth
-import time
 
 load_dotenv()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -225,16 +224,6 @@ if sidebar == pages[10]:
     for image_url, caption in image_urls:
         print(image_url, caption)
         st.image(image_url, caption=caption)
-        time.sleep(0.05)  # petit délai pour que Streamlit ait le temps de rendre les images
 
-    import streamlit.components.v1 as components
-
-    # Injecter JS pour scroller la page entière vers le bas
-    scroll_js = """
-    <script>
-    window.scrollTo(0, document.body.scrollHeight);
-    </script>
-    """
-    components.html(scroll_js, height=0)
 
 
