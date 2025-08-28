@@ -224,10 +224,10 @@ if sidebar == pages[5]:
             st.header("LFA Funds Interviews - Passed")
             st.markdown(
                 f'<a href="https://docs.google.com/presentation/d/1QVvzZKSw53ftSpOCNvsqHaUnoTFsip1PPyLWAmdAhw4/edit?usp=sharing">🌐 Presentation Slides First Interview</a>',
-                unsafe_allow_html=True,)
+                unsafe_allow_html=True)
             st.markdown(
                 f'<a href="https://drive.google.com/file/d/1MTj82NeF25V7NCvF5KBWLG0mBv5gaYf6/view?usp=sharing">🌐 Presentation Slides Second Interview</a>',
-            )
+            unsafe_allow_html=True)
         
         if selection == "Grandes Ecoles Au Féminin":
             st.header("Concours Startup Grandes Ecoles Au Féminin")
