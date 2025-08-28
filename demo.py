@@ -17,11 +17,11 @@ pages = [
     "Career",
     "Entrepreneurship",
     "CNAM: Metrology and Citizen Sciences",
+    "La Jaune et La Rouge",
     "Trips",
     "Theater",
     "Photography",
 ]
-
 st.sidebar.markdown("<h3 style='font-size:32px;'>PROJECTS</h3>", unsafe_allow_html=True)
 sidebar = st.sidebar.radio("", pages)
 
@@ -193,7 +193,16 @@ if sidebar == pages[6]:
         unsafe_allow_html=True,
     )
 
-if sidebar == pages[9]:
+if sidebar == pages[7]:
+    st.title("Articles from La Jaune et La Rouge, Polytechnique's Magazine")
+    st.header("Storio, Energy Storage Company by X2010")
+    st.markdown(
+        f'<a href="https://www.lajauneetlarouge.com/il-manquait-une-technologie-dans-le-paysage-du-stockage-denergie-en-france-caroline-le-floch-gautier-maigret-jean-yves-stephan-et-julien-dumazert-tous-x10-et-cofondateurs-de/">📄 Article</a>',
+        unsafe_allow_html=True,
+    )
+
+
+if sidebar == pages[10]:
     image_urls = [
         ("https://photos.app.goo.gl/bigTvRrEHo64ujak8", "Stoa, Athina"),
         ("https://photos.app.goo.gl/VKbWruWGHw1Aw6kQ7", "Agio Georgious, Thessaloniki"),
