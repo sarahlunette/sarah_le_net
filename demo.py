@@ -187,15 +187,11 @@ if sidebar == pages[4]:
 
     if selected_item == "Resume":
         st.header("Resume ")
-        # Path to your PDF
-        pdf_file = "images/resume.pdf"
-        # Read the PDF as bytes
-        with open(pdf_file, "rb") as f:
-            bytes_data = f.read()
-        base64_pdf = base64.b64encode(bytes_data).decode('utf-8')
-        pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'   
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
+        st.markdown(
+            f'<a href="https://drive.google.com/file/d/1VUAQXaVh8yrQEIWdnX0VlJxuISXtasQJ/view?usp=sharing">🌐 View Certification</a>',
+            unsafe_allow_html=True,
+        )
+        
     elif selected_item == "Certifications":
         st.header("Google Professional Data Engineer Certifications")
         st.markdown(
