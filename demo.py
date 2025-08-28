@@ -294,8 +294,29 @@ if sidebar == pages[8]:
         st.title("Greece 2017")
         
 if sidebar == pages[9]:
-    selected_year = st.selectbox("Select a Year", ['First Year', 'Second Year'])
+    selected_year = st.selectbox("Select a Year", ['Cours Florent Ateliers Jeunes', 'Henri IV First Year', 'Henri IV Second Year', 'Cours Florent Stage','First Year', 'Second Year', 'Espace Beaujon'])
+    
+    if selected_year == 'Cours Florent Ateliers Jeunes':
+        st.title("Cours Florent Ateliers Jeunes")
+        st.header("Poèmes d'Aragon - Le Fou d'Elsa")
 
+    if selected_year == 'Henri IV First Year':
+        st.title("Henri IV First Year")
+        st.header("Faut pas Payer - Dario Fo au théâtre Mouffetard")
+    
+    if selected_year == 'Henri IV Second Year':
+        st.title("Henri IV Second Year")
+        st.header("Le Roi se Meurt - Ionesco")
+    
+    if selected_year == 'Cours Florent Stage':
+        st.title("Cours Florent Stage")
+        st.header("Les Précieuses Ridicules - Molière")
+
+    if selected_year == 'Espace Beaujon':  
+        st.title("Espace Beaujon")
+        st.header("Terrasses - Laurent Gaudet - Jeux Isthmiques")
+        st.header("Terrasses - Laurent Gaudet - Espace Beaujon")
+    
     if selected_year == "First Year":
         st.title("First Year")
         st.header("Antigona")
