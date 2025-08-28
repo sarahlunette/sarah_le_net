@@ -224,15 +224,16 @@ if sidebar == pages[10]:
     for image_url, caption in image_urls:
         print(image_url, caption)
         st.image(image_url, caption=caption)
-
+        time.sleep(0.05)  # petit délai pour que Streamlit ait le temps de rendre les images
+        
     import streamlit.components.v1 as components
 
-    # Scroll from the top to the bottom of the page
+    # Injecter JS pour scroller la page entière vers le bas
     scroll_js = """
     <script>
-    window.onload = function() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
+    window.scrollTo(0, document.body.scrollHeight);
     </script>
     """
-    components.html(scroll_js)
+    components.html(scroll_js, height=0)
+
+
