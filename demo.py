@@ -5,7 +5,6 @@ import urllib.parse
 from github import Github
 from dotenv import load_dotenv
 from github import Auth
-import requests
 
 load_dotenv()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -206,7 +205,7 @@ if sidebar == pages[7]:
 if sidebar == pages[10]:
 
     image_urls = [
-        ("https://photos.app.goo.gl/bigTvRrEHo64ujak8", "Stoa, Athina"),
+        ("https://lh3.googleusercontent.com/pw/AP1GczNRCNr1sm096q8jdQPG-gx9g_MDpRjLJWJknspSQRBgx3mYTdAm5KPJZ2wygHc8p5c3iohOAvZ8PqgdVoh4FjvrxYtIkK1ChW2KP0rU4NIDYsNkkziIa4wNJw3-NYCJeqBK5NzByXeGw5P6uf2nrRfRrQ=w2040-h1478-s-no-gm?authuser=0", "Stoa, Athina"),
         ("https://photos.app.goo.gl/VKbWruWGHw1Aw6kQ7", "Agio Georgious, Thessaloniki"),
         ("https://photos.app.goo.gl/JadDRxCH7VT37xNh7", "Antique theater, Athina"),
         ("https://photos.app.goo.gl/TKcGr9jMFPGVM6Mx9", "Statue"),
@@ -223,5 +222,5 @@ if sidebar == pages[10]:
     ]
 
     for image_url, caption in image_urls:
-        response = requests.get(image_url)
-        st.image(response.content, caption=caption)
+        print(image_url, caption)
+        st.image(image_url, caption=caption)
