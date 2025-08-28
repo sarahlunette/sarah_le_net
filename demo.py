@@ -192,7 +192,7 @@ if sidebar == pages[4]:
         # Read the PDF as bytes
         with open(pdf_file, "rb") as f:
             bytes_data = f.read()
-        base64_pdf = base64.b64encode(bytes_data.read()).decode('utf-8')
+        base64_pdf = base64.b64encode(bytes_data).decode('utf-8')
         pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'   
         st.markdown(pdf_display, unsafe_allow_html=True)
 
