@@ -273,11 +273,11 @@ if sidebar == pages[8]:
 if sidebar == pages[9]:
     selected_year = st.selectbox("Select a Year", ['First Year', 'Second Year'])
 
-    if selected_trip == "First Year":
+    if selected_year == "First Year":
         st.title("First Year")
         st.header("Antigona")
-        
-    elif selected_trip == "Second Year":
+
+    elif selected_year == "Second Year":
         st.title("Second Year")
         st.header("Harry Potter")
 
