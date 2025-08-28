@@ -72,7 +72,8 @@ teaching = ["Data Engineering", "MLOPS", "Data Science"]
 trips = ["South America", "Greece"]
 # career = ["Endeavor", "CV", "Certifications", "University Projects", "Portfolio"]
 career = ["Resume", "Certifications", "LinkedIn"]
-entrepreneurship = ["The Bubble", "?"]
+# entrepreneurship = ["The Bubble", "?"]
+entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 
 # Récupérer la liste des fichiers .txt
 article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
@@ -215,7 +216,6 @@ if sidebar == pages[5]:
             f'<a href="https://thebubble.fr/">🌐 View The Bubble</a>',
             unsafe_allow_html=True,
         )
-        st.image("images/the_bubble.jpg", use_column_width=True)
 
     elif selected_item == "TheLab AI":
         st.header("TheLab AI, resilienceAI")
@@ -257,7 +257,29 @@ if sidebar == pages[7]:
         f'<a href="https://www.lajauneetlarouge.com/il-manquait-une-technologie-dans-le-paysage-du-stockage-denergie-en-france-caroline-le-floch-gautier-maigret-jean-yves-stephan-et-julien-dumazert-tous-x10-et-cofondateurs-de/">📄 Article</a>',
         unsafe_allow_html=True,
     )
+if sidebar == pages[8]:
+    st.title("Trips")
+    selected_trip = st.selectbox("Choose a trip", trips)
 
+    if selected_trip == "South America":
+        st.header("South America 2016/2017")
+        st.header("Interviews with actors of social and environmental changes / In construction", use_column_width=True)
+
+    elif selected_trip == "Greece 2017":
+        st.header("Greece")
+        st.header("Greek Language and Culture / In construction", use_column_width=True
+                  )
+        
+if sidebar == pages[9]:
+    selected_year = st.selectbox("Select a Year", ['First Year', 'Second Year'])
+
+    if selected_trip == "First Year":
+        st.title("First Year")
+        st.header("Antigona")
+        
+    elif selected_trip == "Second Year":
+        st.title("Second Year")
+        st.header("Harry Potter")
 
 if sidebar == pages[10]:
 
