@@ -186,7 +186,7 @@ if sidebar == pages[4]:
 
     if selected_item == "Resume":
         st.header("Resume ")
-        st.image("images/resume.jpg")
+        st.image("images/resume.pdf")
 
     elif selected_item == "Certifications":
         st.header("Google Professional Data Engineer Certifications")
