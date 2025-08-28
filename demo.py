@@ -69,7 +69,8 @@ articles = [
 
 teaching = ["Data Engineering", "MLOPS", "Data Science"]
 trips = ["South America", "Greece"]
-career = ["Endeavor", "CV", "Certifications", "University Projects", "Portfolio"]
+# career = ["Endeavor", "CV", "Certifications", "University Projects", "Portfolio"]
+career = ["Resume", "Certifications", "LinkedIn"]
 entrepreneurship = ["The Bubble", "?"]
 
 # Récupérer la liste des fichiers .txt
