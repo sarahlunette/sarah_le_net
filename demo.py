@@ -190,13 +190,10 @@ if sidebar == pages[4]:
         # Path to your PDF
         pdf_file = "images/resume.pdf"
 
-        # Read the PDF in binary mode
-        with open(pdf_file, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-        # Display PDF in Streamlit
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        st.markdown(
+            f'<iframe src="{pdf_file}" width="700" height="1000" type="application/pdf"></iframe>',
+            unsafe_allow_html=True
+)
 
     elif selected_item == "Certifications":
         st.header("Google Professional Data Engineer Certifications")
