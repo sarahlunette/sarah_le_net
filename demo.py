@@ -203,6 +203,17 @@ if sidebar == pages[7]:
 
 
 if sidebar == pages[10]:
+    import streamlit.components.v1 as components
+
+    # Scroll from the top to the bottom of the page
+    scroll_js = """
+    <script>
+    window.onload = function() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+    </script>
+    """
+    components.html(scroll_js)
 
     image_urls = [
         ("https://lh3.googleusercontent.com/pw/AP1GczNRCNr1sm096q8jdQPG-gx9g_MDpRjLJWJknspSQRBgx3mYTdAm5KPJZ2wygHc8p5c3iohOAvZ8PqgdVoh4FjvrxYtIkK1ChW2KP0rU4NIDYsNkkziIa4wNJw3-NYCJeqBK5NzByXeGw5P6uf2nrRfRrQ=w2040-h1478-s-no-gm?authuser=0", "Stoa, Athina"),
