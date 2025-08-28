@@ -204,7 +204,7 @@ if sidebar == pages[7]:
 
 if sidebar == pages[10]:
     image_urls = [
-        ("https://photos.app.goo.gl/bigTvRrEHo64ujak8", "Stoa, Athina"),
+        ("https://photos.google.com/share/AF1QipOLjhoHeuXLtSEvSbE87LHrOJMZPZf7NYBg42Tby8U9mH95s_ZxgixajdjFwBv33A/photo/AF1QipOXgaB2IOItZksUXchCGSKMugULRUcIq3RKD2yH?key=aXMwVjJVakRtUmxhTkprLVpkanlmQXdCM20zM0x3", "Stoa, Athina"),
         ("https://photos.app.goo.gl/VKbWruWGHw1Aw6kQ7", "Agio Georgious, Thessaloniki"),
         ("https://photos.app.goo.gl/JadDRxCH7VT37xNh7", "Antique theater, Athina"),
         ("https://photos.app.goo.gl/TKcGr9jMFPGVM6Mx9", "Statue"),
@@ -221,4 +221,5 @@ if sidebar == pages[10]:
     ]
 
     for image_url, caption in image_urls:
+        print(image_url, caption)
         st.image(image_url, caption=caption)
