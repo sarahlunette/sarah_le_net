@@ -263,12 +263,11 @@ if sidebar == pages[8]:
 
     if selected_trip == "South America":
         st.title("South America 2016/2017")
-        st.header("Interviews with actors of social and environmental changes / In construction", use_column_width=True)
+        st.header("Interviews with actors of social and environmental changes / In construction")
 
     elif selected_trip == "Greece 2017":
         st.title("Greece 2017")
-        st.header("Greek Language and Culture / In construction", use_column_width=True
-                  )
+        st.header("Greek Language and Culture / In construction")
         
 if sidebar == pages[9]:
     selected_year = st.selectbox("Select a Year", ['First Year', 'Second Year'])
