@@ -221,4 +221,4 @@ if sidebar == pages[10]:
     ]
 
     for image_url, caption in image_urls:
-        st.image(image_url, caption=caption, use_column_width=True)
+        st.image(image_url, caption=caption)
