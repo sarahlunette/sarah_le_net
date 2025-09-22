@@ -274,23 +274,23 @@ if sidebar == pages[6]:
         st.header("List of audited courses")
         courses_mva = ["Advanced learning for text and graph data (Vazirgiannis)", "Statistiques en Grandes Dimensions et Apprentissage (A.Dalalyan)",
                        "Kernel methods for machine learning (J.Mairal/J.P.Vert)", "Méthodes Stochastiques pour l'analyse d'images (A.Desolneux/B.Galerne)"]
-        for course,i  in zip(courses_mva, range(len(courses_mva))):
-            st.write(f"{i}- {course}")
+        for course,i  in zip(courses_mva, range(1,len(courses_mva)+1)):
+            st.write(f"{i} - {course}")
         
     if selected_course == 'MOCIS':
         st.title("MOCIS - Master Mathématiques et Optimisation pour la Connaissance, l'Incertitude et la Simulation")
         st.header("List of audited courses")
         courses_mocis = ["Coastal Hydrodynamics - A. Stegner, Y. Cuypers", "Energetics of the climate system - Hervé Le Treut", "Clouds, Aerosols and Precipitation - Hélène Chepfer", "Physical Oceanography - Oceanic circulation - Pascale Bouruet",
                          "GFD-1 Geophysical Fluid Dynamics - Models and their main properties - Zeitlin"]
-        for course,i  in zip(courses_mocis, range(len(courses_mocis))):
-            st.write(f"{i}- {course}")
+        for course,i  in zip(courses_mocis, range(1,len(courses_mocis)+1)):
+            st.write(f"{i} - {course}")
 
     if selected_course == 'M1M2 Risques et environnements':
         st.title("M1M2 Risques et Environnements - Master 1 et 2 Risques et Environnements")
         st.header("List of audited courses")
         courses_m1m2 = ['Remote Sensing - Desa']
-        for course,i  in zip(courses_m1m2, range(len(courses_m1m2))):
-            st.write(f"{i}- {course}")
+        for course,i  in zip(courses_m1m2, range(1,len(courses_m1m2)+1)):
+            st.write(f"{i} - {course}")
 
 
 if sidebar == pages[7]:
@@ -435,5 +435,5 @@ if sidebar == pages[11]:
 # TODO: Add descriptions of the courses
 if sidebar == pages[12]:
     st.title("Courses")
-    for course, i, description in zip(courses, range(len(courses), description_courses)):
-        st.write(f"{i}- {course}, {description}")
+    for course, i, description in zip(courses, range(1,len(courses)+1), description_courses):
+        st.write(f"{i} - {course}, {description}")
