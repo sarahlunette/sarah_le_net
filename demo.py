@@ -17,6 +17,7 @@ pages = [
     "Teaching",
     "Career",
     "Entrepreneurship",
+    "Additional Master's courses"
     "CNAM: Metrology and Citizen Sciences",
     "La Jaune et La Rouge",
     "Trips",
@@ -81,6 +82,8 @@ entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
 
 courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Others"] #TODO: Les cours, les vidéos, à un moment rajouter les meetups
+description_courses = ["Prepararing for Google Cloud Certification: CLoud Engineer", "Professional Data Engineer, GCP", "(1) Cloud Architect, (2) Data Engineer", "Various videos on Data Engineering, MLOPS, Cloud Computing", "Various courses on Udemy, OpenClassrooms..."]
+masters_courses = ['MVA', 'MOCIS', 'M1M2 Risques et environnements']
 
 if sidebar == pages[0]:
     st.title("The Lab")
@@ -265,7 +268,24 @@ if sidebar == pages[5]:
             unsafe_allow_html=True,
         )
 
+#TODO: Add the courses I took in MVA, MOCIS, M1M2 Risques et Environnements
 if sidebar == pages[6]:
+    st.title("Additional Master's courses")
+    selected_course = st.selectbox("Choose a course", masters_courses)
+    if selected_course == 'MVA':
+        st.title("MVA - Master Vision, Apprentissage et Données")
+        st.header("List of audited courses")
+        
+    if selected_course == 'MOCIS':
+        st.title("MOCIS - Master Mathématiques et Optimisation pour la Connaissance, l'Incertitude et la Simulation")
+        st.header("List of audited courses")
+
+    if selected_course == 'M1M2 Risques et environnements':
+        st.title("M1M2 Risques et Environnements - Master 1 et 2 Risques et Environnements")
+        st.header("List of audited courses")
+
+
+if sidebar == pages[7]:
     st.title("CNAM")
     st.header("Slides (French Version)")
     st.markdown(
@@ -279,14 +299,14 @@ if sidebar == pages[6]:
         unsafe_allow_html=True,
     )
 
-if sidebar == pages[7]:
+if sidebar == pages[8]:
     st.title("Articles from La Jaune et La Rouge, Polytechnique's Magazine")
     st.header("Storio, Energy Storage Company by X2010")
     st.markdown(
         f'<a href="https://www.lajauneetlarouge.com/il-manquait-une-technologie-dans-le-paysage-du-stockage-denergie-en-france-caroline-le-floch-gautier-maigret-jean-yves-stephan-et-julien-dumazert-tous-x10-et-cofondateurs-de/">📄 Article</a>',
         unsafe_allow_html=True,
     )
-if sidebar == pages[8]:
+if sidebar == pages[9]:
     st.title("Trips")
     selected_trip = st.selectbox("Choose a trip", trips)
 
@@ -297,11 +317,11 @@ if sidebar == pages[8]:
     elif selected_trip == "Greece 2017":
         st.title("Greece 2017")
         
-if sidebar == pages[9]:
-    selected_year = st.selectbox("Select a Year", ['Cours Florent Ateliers Jeunes', 'Henri IV First Year', 'Henri IV Second Year', 'Cours Florent Stage','First Year', 'Second Year', 'Espace Beaujon'])
+if sidebar == pages[10]:
+    selected_year = st.selectbox("Select a Year", ['Cours Florent Ateliers Jeunes', 'Henri IV First Year', 'Henri IV Second Year', 'Cours Florent Stage', 'Tentative d\'organisation d\'une pièce à l\'école Polytechnique','First Year EVOE', 'Second Year EVOE', 'Espace Beaujon', 'Paid Work'])
     
     if selected_year == 'Cours Florent Ateliers Jeunes':
-        st.title("Cours Florent Ateliers Jeunes")
+        st.title("Cours Florent Ateliers Jeunes - 2 ans")
         st.header("Poèmes d'Aragon - Le Fou d'Elsa")
 
     if selected_year == 'Henri IV First Year':
@@ -316,20 +336,30 @@ if sidebar == pages[9]:
         st.title("Cours Florent Stage")
         st.header("Les Précieuses Ridicules - Molière")
 
+    if selected_year == 'Tentative d\'organisation d\'une pièce à l\'école Polytechnique':
+        st.title("Barouffe à Chiogia - Carlo Goldoni")
+
     if selected_year == 'Espace Beaujon':  
         st.title("Espace Beaujon")
         st.header("Terrasses - Laurent Gaudet - Jeux Isthmiques")
         st.header("Terrasses - Laurent Gaudet - Espace Beaujon")
     
-    if selected_year == "First Year":
+    if selected_year == "First Year EVOE":
         st.title("First Year")
         st.header("Antigona")
 
-    elif selected_year == "Second Year":
+    if selected_year == "Second Year EVOE":
         st.title("Second Year")
         st.header("Harry Potter")
+    
+    elif selected_year == "Paid Work":
+        st.title("Paid Work")
+        st.header("O Magico de Oz - plataforma")
+        st.write("Interventions in schools and festivals")
+        st.header("Teatro de Marionetas")
+        st.write("Street performances in Bélèm")
 
-if sidebar == pages[10]:
+if sidebar == pages[11]:
 
     image_urls = [
         (
@@ -394,7 +424,8 @@ if sidebar == pages[10]:
         print(image_url, caption)
         st.image(image_url, caption=caption)
 
-if sidebar == pages[11]:
+# TODO: Add descriptions of the courses
+if sidebar == pages[12]:
     st.title("Courses")
-    for course in courses:
-        st.write(f"- {course}")
+    for course, i, description in zip(courses, range(len(courses), description_courses)):
+        st.write(f"{i}- {course}, {description}")
