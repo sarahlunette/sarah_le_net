@@ -22,6 +22,7 @@ pages = [
     "Trips",
     "Theater",
     "Photography",
+    "Courses"
 ]
 st.sidebar.markdown("<h3 style='font-size:32px;'>PROJECTS</h3>", unsafe_allow_html=True)
 sidebar = st.sidebar.radio("", pages)
@@ -30,6 +31,7 @@ p_articles = ["Interviews", "State-of-the-art", "Articles"]
 p_entrepreneurship = ["The Bubble", "The Lab"]
 p_trips = ["South America", "Sri Lanka", "Italy"]
 p_theater = ["Workshops", "Plays", "Puppets"]
+
 
 
 hackathons = [
@@ -77,6 +79,8 @@ entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 
 # Récupérer la liste des fichiers .txt
 article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
+
+courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Others"] #TODO: Les cours, les vidéos, à un moment rajouter les meetups
 
 if sidebar == pages[0]:
     st.title("The Lab")
@@ -389,3 +393,8 @@ if sidebar == pages[10]:
     for image_url, caption in image_urls:
         print(image_url, caption)
         st.image(image_url, caption=caption)
+
+if sidebar == pages[11]:
+    st.title("Courses")
+    for course in courses:
+        st.write(f"- {course}")
