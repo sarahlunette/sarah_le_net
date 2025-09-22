@@ -2,9 +2,8 @@ import streamlit as st
 import os
 import base64
 import urllib.parse
-from github import Github
+from github import Github, Auth
 from dotenv import load_dotenv
-from github import Auth
 import base64
 
 load_dotenv()
@@ -17,7 +16,7 @@ pages = [
     "Teaching",
     "Career",
     "Entrepreneurship",
-    "Additional Master's courses"
+    "Additional Master's courses",
     "CNAM: Metrology and Citizen Sciences",
     "La Jaune et La Rouge",
     "Trips",
@@ -32,8 +31,6 @@ p_articles = ["Interviews", "State-of-the-art", "Articles"]
 p_entrepreneurship = ["The Bubble", "The Lab"]
 p_trips = ["South America", "Sri Lanka", "Italy"]
 p_theater = ["Workshops", "Plays", "Puppets"]
-
-
 
 hackathons = [
     "GeoHack AI",
