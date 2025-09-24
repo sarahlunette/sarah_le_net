@@ -1,0 +1,31 @@
+﻿J’ai eu la chance de discuter avec Léo de Califrais, une entreprise ayant un grand impact sur la décarbonation, que j’ai trouvée en recherchant les entreprises de VivaTech. Deeptech française, Califrais décarbone et réinvente la supply chain alimentaire grâce à l’IA.
+Le CEO, Simon Bussy, de Télécom Paris, MVA à l’ENS Cachan et docteur en Machine Learning, a créé l’entreprise en 2014. L’entreprise, ayant désormais une grande expérience de l’optimisation dans ce domaine, publie des articles de recherche et continue à améliorer le système. 
+Leur technologie s’appuie sur plusieurs aspects de la décarbonation: le transport, l’optimisation des chargements, la perte de production multifactorielle (transport, manutention, péremption). Leur site, rungismarket.com, permet aux professionnels de la restauration de commander des produits frais en ligne jusqu’à minuit pour une livraison dès 6h le lendemain. Ils sont à l’heure actuelle en discussion avec d’autres marchés en Europe et dans le monde. Le marché de Rungis est, cependant, le plus grand marché de produits frais au monde.
+
+
+
+
+Est-ce que tu peux me rappeler les différents volets de la décarbonation desquels vous participez ? 
+“Califrais participe activement à la décarbonation de la supply chain alimentaire de plusieurs manières: grâce à nos algorithmes d’optimisation de tournées de livraison, on réduit le nombre de camions nécessaires ainsi que le nombre de KM parcourus. Grâce à notre service de mutualisation de commande à Rungis, on divise par 7 les émissions de Co2 en regroupant l’ensemble des commandes d’un restaurant. Grâce à nos algorithmes d’optimisation de stock, on réduit le gaspillage alimentaire. En permettant aux grossistes et centrales d’achat de commander exactement ce dont elles ont besoin.”
+
+
+Vous utilisez quel stack ? 
+“PHP pour la stack dev et Python pour la stack data. Nous utilisons les frameworks Symfony, React et React Native dans leurs dernières versions”
+
+
+Comment est-ce que vous pensez utiliser l’IA et les agents ?
+“Califrais développe et utilise l’IA au quotidien dans nos algorithmes d’optimisation. L’IA est utilisée aussi dans l’optimisation de tâches quotidiennes: gestion de la facturation, marketing, support. On crée, on configure des agents qui vont faire des tâches spécifiques: par exemple, l’analyse quotidienne de centaines de factures fournisseurs.”
+
+
+Something else que tu voudrais que je fasse passer ?
+“Un point intéressant sur Califrais à mes yeux est sa place centrale entre la recherche et l'opérationnel. On a créé un laboratoire de recherche en partenariat avec la Sorbonne, on encadre les thèses de doctorants et on travaille avec des professeurs sur des projets de recherche. En fournissant des problématiques, des sets de données et du financement, on  peut faire avancer l'état de l’art dans notre domaine. Et en même temps on travaille sur des problématiques très concrètes avec Rungis Market en développant un service innovant pour les restaurateurs qui s'appuie sur nos technologies.”
+
+
+Quelle est la quantité de réduction d’émissions de CO2 qui vous est due sur les dernières années ? Ça représente combien des émissions industrielles françaises ?
+“On collabore avec l’ADEME sur la mise en place de mesures fiables et externes, on a prévu des communications à ce sujet dans les prochains mois.”
+
+
+Un lien vers les articles
+https://www.califrais.fr/en/publications?
+Un lien github
+https://github.com/Califrais
