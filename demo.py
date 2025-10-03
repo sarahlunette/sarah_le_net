@@ -45,6 +45,8 @@ hackathons = [
     "ESPF, Survival Projection of Railways in Climate Change",
     "Climate Relief to Resilience",
     "PyTorch Tsunamis",
+    'LabLabAI',
+    'Les clés du Château de Versailles'
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -59,6 +61,8 @@ repo_names = [
     "ESPF",
     "resilience2reliefai",
     "pytorch_tsunamis",
+    'Agent_Resilience',
+    'Vers_AI_lles'
 ]
 
 articles = [
