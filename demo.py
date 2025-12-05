@@ -6,6 +6,10 @@ from github import Github, Auth
 from dotenv import load_dotenv
 import base64
 
+st.set_page_config(
+    page_title="TheLab"
+)
+
 load_dotenv()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
@@ -82,7 +86,7 @@ entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 # Récupérer la liste des fichiers .txt
 article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
 
-courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Others"] #TODO: Les cours, les vidéos, à un moment rajouter les meetups
+courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Surfaces Molle, Quéré", "Radiations, Le Treut", "Hydrodynamique", "Turbulence, Tabeling"] #TODO: Les cours, les vidéos, à un moment rajouter les meetups
 description_courses = ["Prepararing for Google Cloud Certification: CLoud Engineer", "Professional Data Engineer, GCP", "(1) Cloud Architect, (2) Data Engineer", "Various videos on Data Engineering, MLOPS, Cloud Computing", "Various courses on Udemy, OpenClassrooms..."]
 masters_courses = ['MVA', 'MOCIS', 'M1M2 Risques et environnements']
 
