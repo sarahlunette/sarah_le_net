@@ -267,6 +267,23 @@ if sidebar == pages[5]:
             f'<a href="https://docs.google.com/document/d/1Y58MhDJ2axgbhHyfjSfwgX6mGUmfpbFl9bLjDX6Vg-E/edit?usp=sharing">🌐 Presentation (French)</a>',
             unsafe_allow_html=True,
         )
+        for i in range(len(hackathons)):
+            st.link_button(
+                "🌐 View on GitHub", "https://github.com/sarahlunette/" + 'TheLab_resilienceai'
+            )
+            auth = Auth.Login("sarahlunette", GITHUB_TOKEN)
+
+            # Initialize GitHub client (no token needed for public repos)
+            g = Github(auth=auth)
+            repo = g.get_repo("sarahlunette/" + repo_names[i])
+
+            # Get README.md content
+            readme_file = repo.get_readme()
+            readme_content = readme_file.decoded_content.decode()
+
+            # Render as Markdown
+            st.markdown("# 📄 README")
+            st.markdown(readme_content, unsafe_allow_html=True)
 
     elif selected_item == "TheLab Data":
         st.header("TheLab Data, Data Acquisition")
