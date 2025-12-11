@@ -100,6 +100,7 @@ if sidebar == pages[0]:
     )
 
 if sidebar == pages[1]:
+    st.write("The entirety of these hackathons are directed towards emergency crises and resilience or healthcare as well as help to development, or towards specific technologies: remote sensing, VIT, NLP, Embeddings, LLM and Agents.")
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
     for i in range(len(hackathons)):
