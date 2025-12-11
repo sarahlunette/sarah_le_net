@@ -50,7 +50,8 @@ hackathons = [
     "Climate Relief to Resilience",
     "PyTorch Tsunamis",
     'LabLabAI',
-    'Les clés du Château de Versailles'
+    'Les clés du Château de Versailles',
+    'HackTheGap'
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -66,7 +67,8 @@ repo_names = [
     "resilience2reliefai",
     "pytorch_tsunamis",
     'Agent_Resilience',
-    'Vers_AI_lles'
+    'Vers_AI_lles',
+    'HackTheGap'
 ]
 
 articles = [
@@ -201,7 +203,7 @@ if sidebar == pages[4]:
     if selected_item == "Resume":
         st.header("Resume ")
         st.markdown(
-            f'<a href="https://drive.google.com/file/d/1VUAQXaVh8yrQEIWdnX0VlJxuISXtasQJ/view?usp=sharing">🌐 View Certification</a>',
+            f'<a href="https://drive.google.com/file/d/1zJzdpMalbKEZ1vZ39UEeZFcH2-XhPieW/view?usp=sharing">🌐 View Certification</a>',
             unsafe_allow_html=True,
         )
         
