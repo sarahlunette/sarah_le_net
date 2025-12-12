@@ -482,3 +482,7 @@ if sidebar == pages[13]:
     st.title("Events")
     for event, i in zip(events, range(1,len(events)+1)):
         st.write(f"{i} - {event}")
+
+if sidebar == pages[14]:
+    st.title("X-Urgence Ecologique")
+    st.write("Participation à l'organisation du Festi'bal")
