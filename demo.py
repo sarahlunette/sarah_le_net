@@ -5,6 +5,9 @@ import urllib.parse
 from github import Github, Auth
 from dotenv import load_dotenv
 import base64
+import streamlit as st
+import os
+import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="TheLab"
@@ -26,7 +29,8 @@ pages = [
     "Trips",
     "Theater",
     "Photography",
-    "Courses"
+    "Courses",
+    "Events"
 ]
 st.sidebar.markdown("<h3 style='font-size:32px;'>PROJECTS</h3>", unsafe_allow_html=True)
 sidebar = st.sidebar.radio("", pages)
@@ -92,6 +96,8 @@ courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Surf
 description_courses = ["Prepararing for Google Cloud Certification: CLoud Engineer", "Professional Data Engineer, GCP", "(1) Cloud Architect, (2) Data Engineer", "Various videos on Data Engineering, MLOPS, Cloud Computing", "Various courses on Udemy, OpenClassrooms..."]
 masters_courses = ['MVA', 'MOCIS', 'M1M2 Risques et environnements']
 
+events = ["Climate House", "DataKind", "DataForGood", "Women in Tech", "Databrunch", "GenAI Collective", "AI Tinkerers", "Dust", "X-IA", "Google", "Women in Climate", "Columbia University Maison Française", "datacraft"]
+
 if sidebar == pages[0]:
     st.title("The Lab")
     st.header("by Sarah LE NET")
@@ -121,10 +127,6 @@ if sidebar == pages[1]:
             # Render as Markdown
             st.markdown("# 📄 README")
             st.markdown(readme_content, unsafe_allow_html=True)
-
-import streamlit as st
-import os
-import streamlit.components.v1 as components
 
 # Afficher une liste déroulante pour choisir un article
 if sidebar == pages[2]:
@@ -341,6 +343,16 @@ if sidebar == pages[8]:
         f'<a href="https://www.lajauneetlarouge.com/il-manquait-une-technologie-dans-le-paysage-du-stockage-denergie-en-france-caroline-le-floch-gautier-maigret-jean-yves-stephan-et-julien-dumazert-tous-x10-et-cofondateurs-de/">📄 Article</a>',
         unsafe_allow_html=True,
     )
+    st.header("Galadrim")
+    st.markdown(
+        f'<a href="https://www.lajauneetlarouge.com/en-services-it-les-besoins-sont-partout-de-la-start-up-au-grand-groupe-arnaud-albalat-x11-cofondateur-de-galadrim/?srsltid=AfmBOor-xOwxXyWJaobmhiUuEjt01h7QbzyfOXbwujUifuv3S16wq0ig">📄 Article</a>',
+        unsafe_allow_html=True,
+    )
+    st.header("Rivages, de la joaillerie créée par les clients")
+    st.markdown(
+        f'<a href="https://www.lajauneetlarouge.com/rivages-de-la-joaillerie-cocreee-avec-les-clients/?srsltid=AfmBOopywqmalYDogkaDhWIeNHXJH4KM5vBIAfvRPKiEO3XNFh2HPJzX">📄 Article</a>',
+        unsafe_allow_html=True,
+    )
 if sidebar == pages[9]:
     st.title("Trips")
     selected_trip = st.selectbox("Choose a trip", trips)
@@ -464,3 +476,8 @@ if sidebar == pages[12]:
     st.title("Courses")
     for course, i, description in zip(courses, range(1,len(courses)+1), description_courses):
         st.write(f"{i} - {course}, {description}")
+
+if sidebar == pages[13]:
+    st.title("Events")
+    for event, i, description in zip(events, range(1,len(events)+1)):
+        st.write(f"{i} - {event}")
