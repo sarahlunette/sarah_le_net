@@ -96,13 +96,13 @@ courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Surf
 description_courses = ["Prepararing for Google Cloud Certification: CLoud Engineer", "Professional Data Engineer, GCP", "(1) Cloud Architect, (2) Data Engineer", "Various videos on Data Engineering, MLOPS, Cloud Computing", "Various courses on Udemy, OpenClassrooms..."]
 masters_courses = ['MVA', 'MOCIS', 'M1M2 Risques et environnements']
 
-events = ["Climate House", "DataKind", "DataForGood", "Women in Tech", "Databrunch", "GenAI Collective", "AI Tinkerers", "Dust", "X-IA", "Google", "Women in Climate", "Columbia University Maison Française", "datacraft"]
+events = ["Climate House", "DataKind", "DataForGood", "Women in Tech", "Databrunch", "GenAI Collective", "AI Tinkerers", "Dust", "X-IA", "Google", "Women in Climate", "Columbia University Maison Française", "datacraft", "42", "Columbia University Online", "VivaTech", "AdoptAI", "Open Source Conference", "Wats4U"]
 
 if sidebar == pages[0]:
     st.title("The Lab")
     st.header("by Sarah LE NET")
     st.markdown(
-        "Inspired by passions and interests, I started writing this blog while working on a state-of-the-art of data in prevention of natural risks and crises response as well as GenAI in Healthcare. It turned out a lot of what has been done is valuable and I would love to present it to you."
+        "Inspired by passions and interests, I started writing this blog while working on a state-of-the-art of data in prevention of natural risks and crises response as well as GenAI in Healthcare. In the last section I'll present some tech watch and culture events. It turned out a lot of what has been done is valuable and I would love to present it to you."
     )
 
 if sidebar == pages[1]:
