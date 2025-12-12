@@ -30,7 +30,8 @@ pages = [
     "Theater",
     "Photography",
     "Courses",
-    "Events"
+    "Events",
+    "X-Urgence Ecologique"
 ]
 st.sidebar.markdown("<h3 style='font-size:32px;'>PROJECTS</h3>", unsafe_allow_html=True)
 sidebar = st.sidebar.radio("", pages)
