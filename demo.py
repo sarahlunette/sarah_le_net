@@ -561,3 +561,4 @@ if sidebar == pages[13]:
 if sidebar == pages[14]:
     st.title("X-Urgence Ecologique")
     st.write("Participation à l'organisation du Festi'bal")
+
