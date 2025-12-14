@@ -39,7 +39,8 @@ repo_names = [
     "resilience2reliefai",
     "pytorch_tsunamis",
     "Agent_Resilience",
-    "easyimmo" "Vers-AI-lles",
+    "easyimmo",
+    "Vers-AI-lles",
     "HackTheGap",
     "Hackathon-Columbia"
 ]
