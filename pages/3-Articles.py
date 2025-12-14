@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import streamlit.components.v1 as components
 
-language = st.sidebar.selectbox("Choose a language", ["Français", "English"])
+language = st.sidebar.radio("Choose a language", ["Français", "English"])
 if language == "Français":
     language = "French"
     article_files = [
@@ -19,7 +19,7 @@ else:
     ]
 
 selected_article = (
-    st.sidebar.selectbox("Choose an article", article_files)
+    st.sidebar.radio("Choose an article", article_files)
     .replace(" ", "_")
     .replace("(French_Version)", "")
     .replace("(English_Version)", "")
