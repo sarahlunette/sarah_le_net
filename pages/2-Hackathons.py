@@ -4,7 +4,7 @@ from github import Github, Auth
 from dotenv import load_dotenv
 
 load_dotenv()
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 
 hackathons = [
     "GeoHack AI",
