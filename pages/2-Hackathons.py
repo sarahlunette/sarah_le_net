@@ -20,8 +20,10 @@ hackathons = [
     "Climate Relief to Resilience",
     "PyTorch Tsunamis",
     "LabLabAI",
-    "Blackbox AI" "Les clés du Château de Versailles",
+    "Blackbox AI",
+    "Les clés du Château de Versailles",
     "HackTheGap",
+    "IteratexColumbia"
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -39,6 +41,7 @@ repo_names = [
     "Agent_Resilience",
     "easyimmo" "Vers-AI-lles",
     "HackTheGap",
+    "Hackathon-Columbia"
 ]
 
 st.title("Hackathons")
