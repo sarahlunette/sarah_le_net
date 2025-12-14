@@ -9,13 +9,11 @@ import streamlit as st
 import os
 import streamlit.components.v1 as components
 
-st.set_page_config(
-    page_title="TheLab"
-)
+st.set_page_config(page_title="TheLab")
 
 load_dotenv()
-#GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-GITHUB_TOKEN='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'
+# GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_TOKEN = "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"
 pages = [
     "Presentation",
     "Hackathons",
@@ -31,7 +29,7 @@ pages = [
     "Photography",
     "Courses",
     "Events",
-    "X-Urgence Ecologique"
+    "X-Urgence Ecologique",
 ]
 st.sidebar.markdown("<h3 style='font-size:32px;'>PROJECTS</h3>", unsafe_allow_html=True)
 sidebar = st.sidebar.radio("", pages)
@@ -54,9 +52,9 @@ hackathons = [
     "ESPF, Survival Projection of Railways in Climate Change",
     "Climate Relief to Resilience",
     "PyTorch Tsunamis",
-    'LabLabAI',
-    'Les clés du Château de Versailles',
-    'HackTheGap'
+    "LabLabAI",
+    "Blackbox AI" "Les clés du Château de Versailles",
+    "HackTheGap",
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -71,9 +69,9 @@ repo_names = [
     "ESPF",
     "resilience2reliefai",
     "pytorch_tsunamis",
-    'Agent_Resilience',
-    'Vers-AI-lles',
-    'HackTheGap'
+    "Agent_Resilience",
+    "easyimmo" "Vers-AI-lles",
+    "HackTheGap",
 ]
 
 articles = [
@@ -93,11 +91,46 @@ entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 # Récupérer la liste des fichiers .txt
 article_files = [f[:-4] for f in os.listdir("articles") if f.endswith(".txt")]
 
-courses = ["Coursera", "Cloud Guru", "CloudSkillsBoost", "Youtube Videos", "Surfaces Molle, Quéré", "Radiations, Le Treut", "Hydrodynamique", "Turbulence, Tabeling"] #TODO: Les cours, les vidéos, à un moment rajouter les meetups
-description_courses = ["Prepararing for Google Cloud Certification: CLoud Engineer", "Professional Data Engineer, GCP", "(1) Cloud Architect, (2) Data Engineer", "Various videos on Data Engineering, MLOPS, Cloud Computing", "Various courses on Udemy, OpenClassrooms..."]
-masters_courses = ['MVA', 'MOCIS', 'M1M2 Risques et environnements']
+courses = [
+    "Coursera",
+    "Cloud Guru",
+    "CloudSkillsBoost",
+    "Youtube Videos",
+    "Surfaces Molle, Quéré",
+    "Radiations, Le Treut",
+    "Hydrodynamique",
+    "Turbulence, Tabeling",
+]  # TODO: Les cours, les vidéos, à un moment rajouter les meetups
+description_courses = [
+    "Prepararing for Google Cloud Certification: CLoud Engineer",
+    "Professional Data Engineer, GCP",
+    "(1) Cloud Architect, (2) Data Engineer",
+    "Various videos on Data Engineering, MLOPS, Cloud Computing",
+    "Various courses on Udemy, OpenClassrooms...",
+]
+masters_courses = ["MVA", "MOCIS", "M1M2 Risques et environnements"]
 
-events = ["Climate House", "DataKind", "DataForGood", "Women in Tech", "Databrunch", "GenAI Collective", "AI Tinkerers", "Dust", "X-IA", "Google", "Women in Climate", "Columbia University Maison Française", "datacraft", "42", "Columbia University Online", "VivaTech", "AdoptAI", "Open Source Conference", "Wats4U"]
+events = [
+    "Climate House",
+    "DataKind",
+    "DataForGood",
+    "Women in Tech",
+    "Databrunch",
+    "GenAI Collective",
+    "AI Tinkerers",
+    "Dust",
+    "X-IA",
+    "Google",
+    "Women in Climate",
+    "Columbia University Maison Française",
+    "datacraft",
+    "42",
+    "Columbia University Online",
+    "VivaTech",
+    "AdoptAI",
+    "Open Source Conference",
+    "Wats4U",
+]
 
 if sidebar == pages[0]:
     st.title("The Lab")
@@ -105,10 +138,14 @@ if sidebar == pages[0]:
     st.markdown(
         "Inspired by passions and interests, I started writing this blog while working on a state-of-the-art of data in prevention of natural risks and crises response as well as GenAI in Healthcare. In the last section I'll present some tech watch and culture events. It turned out a lot of what has been done is valuable and I would love to present it to you."
     )
-    st.write('I started this journey a long time ago, inspired by nature, people and physics. At Columbia University, I got out of my training with a will to use data for good. I then continued into environmental issues and decided to go on a Long trip across South America to discover landscape, problems and technology possibilities. 4 years ago I encountered DataKind whom I have followed since and when GenAI appeared mainstream, I started asking questions on how to apply it to disaster preparedness, emergency crisis, NGOs, etc. I looked from far organisations such as Global Pulse or Google Crisis Response.')
+    st.write(
+        "I started this journey a long time ago, inspired by nature, people and physics. At Columbia University, I got out of my training with a will to use data for good. I then continued into environmental issues and decided to go on a Long trip across South America to discover landscape, problems and technology possibilities. 4 years ago I encountered DataKind whom I have followed since and when GenAI appeared mainstream, I started asking questions on how to apply it to disaster preparedness, emergency crisis, NGOs, etc. I looked from far organisations such as Global Pulse or Google Crisis Response."
+    )
 
 if sidebar == pages[1]:
-    st.write("The entirety of these hackathons are directed towards emergency crises and resilience or healthcare as well as help to development, or towards specific technologies: remote sensing, VIT, NLP, Embeddings, LLM and Agents.")
+    st.write(
+        "The entirety of these hackathons are directed towards emergency crises and resilience or healthcare as well as help to development, or towards specific technologies: remote sensing, VIT, NLP, Embeddings, LLM and Agents."
+    )
     selected_hackathons = st.selectbox("Choose a hackathon", hackathons)
 
     for i in range(len(hackathons)):
@@ -211,7 +248,7 @@ if sidebar == pages[4]:
             f'<a href="https://drive.google.com/file/d/1zJzdpMalbKEZ1vZ39UEeZFcH2-XhPieW/view?usp=sharing">🌐 View Certification</a>',
             unsafe_allow_html=True,
         )
-        
+
     elif selected_item == "Certifications":
         st.header("Google Professional Data Engineer Certifications")
         st.markdown(
@@ -231,30 +268,36 @@ if sidebar == pages[5]:
 
     if selected_item == "The Bubble":
         st.header("The Bubble, Coworking Space with Daycare")
-        selection = st.selectbox("Choose a program", ["Sista", "LFA Funds", "Grandes Ecoles Au Féminin", "Empow'Her" ])
-        
+        selection = st.selectbox(
+            "Choose a program",
+            ["Sista", "LFA Funds", "Grandes Ecoles Au Féminin", "Empow'Her"],
+        )
+
         if selection == "Sista":
             st.header("Sista Incubator Interviews")
             st.markdown(
                 f'<a href="https://drive.google.com/file/d/1C9PNTzMqSl9ZqF5N2ZHRPkrnrEZRUBDr/view?usp=sharing">🌐 Presentation Video</a>',
-                unsafe_allow_html=True,)
+                unsafe_allow_html=True,
+            )
 
         if selection == "LFA Funds":
             st.header("LFA Funds Interviews - Passed")
             st.markdown(
                 f'<a href="https://docs.google.com/presentation/d/1QVvzZKSw53ftSpOCNvsqHaUnoTFsip1PPyLWAmdAhw4/edit?usp=sharing">🌐 Presentation Slides First Interview</a>',
-                unsafe_allow_html=True)
+                unsafe_allow_html=True,
+            )
             st.markdown(
                 f'<a href="https://drive.google.com/file/d/1MTj82NeF25V7NCvF5KBWLG0mBv5gaYf6/view?usp=sharing">🌐 Presentation Slides Second Interview</a>',
-            unsafe_allow_html=True)
-        
+                unsafe_allow_html=True,
+            )
+
         if selection == "Grandes Ecoles Au Féminin":
             st.header("Concours Startup Grandes Ecoles Au Féminin")
             st.markdown(
                 f'<a href="https://www.gefstartup.com/">🌐 Grandes Ecoles Au Féminin</a>',
                 unsafe_allow_html=True,
             )
-           
+
         if selection == "Empow'Her":
             st.header("Business Plan and Definition of the Project Workshop")
             st.markdown(
@@ -273,13 +316,14 @@ if sidebar == pages[5]:
             unsafe_allow_html=True,
         )
         st.link_button(
-            "🌐 View on GitHub", "https://github.com/sarahlunette/" + 'TheLab_resilienceai'
+            "🌐 View on GitHub",
+            "https://github.com/sarahlunette/" + "TheLab_resilienceai",
         )
         auth = Auth.Login("sarahlunette", GITHUB_TOKEN)
 
         # Initialize GitHub client (no token needed for public repos)
         g = Github(auth=auth)
-        repo = g.get_repo("sarahlunette/" 'TheLab_resilienceai')
+        repo = g.get_repo("sarahlunette/" "TheLab_resilienceai")
 
         # Get README.md content
         readme_file = repo.get_readme()
@@ -296,31 +340,44 @@ if sidebar == pages[5]:
             unsafe_allow_html=True,
         )
 
-#TODO: Add the courses I took in MVA, MOCIS, M1M2 Risques et Environnements
+# TODO: Add the courses I took in MVA, MOCIS, M1M2 Risques et Environnements
 if sidebar == pages[6]:
     st.title("Additional Master's courses")
     selected_course = st.selectbox("Choose a course", masters_courses)
-    if selected_course == 'MVA':
+    if selected_course == "MVA":
         st.title("MVA - Master Vision, Apprentissage et Données")
         st.header("List of audited courses")
-        courses_mva = ["Advanced learning for text and graph data (Vazirgiannis)", "Statistiques en Grandes Dimensions et Apprentissage (A.Dalalyan)",
-                       "Kernel methods for machine learning (J.Mairal/J.P.Vert)", "Méthodes Stochastiques pour l'analyse d'images (A.Desolneux/B.Galerne)"]
-        for course,i  in zip(courses_mva, range(1,len(courses_mva)+1)):
-            st.write(f"{i} - {course}")
-        
-    if selected_course == 'MOCIS':
-        st.title("MOCIS - Master Mathématiques et Optimisation pour la Connaissance, l'Incertitude et la Simulation")
-        st.header("List of audited courses")
-        courses_mocis = ["Coastal Hydrodynamics - A. Stegner, Y. Cuypers", "Energetics of the climate system - Hervé Le Treut", "Clouds, Aerosols and Precipitation - Hélène Chepfer", "Physical Oceanography - Oceanic circulation - Pascale Bouruet",
-                         "GFD-1 Geophysical Fluid Dynamics - Models and their main properties - Zeitlin"]
-        for course,i  in zip(courses_mocis, range(1,len(courses_mocis)+1)):
+        courses_mva = [
+            "Advanced learning for text and graph data (Vazirgiannis)",
+            "Statistiques en Grandes Dimensions et Apprentissage (A.Dalalyan)",
+            "Kernel methods for machine learning (J.Mairal/J.P.Vert)",
+            "Méthodes Stochastiques pour l'analyse d'images (A.Desolneux/B.Galerne)",
+        ]
+        for course, i in zip(courses_mva, range(1, len(courses_mva) + 1)):
             st.write(f"{i} - {course}")
 
-    if selected_course == 'M1M2 Risques et environnements':
-        st.title("M1M2 Risques et Environnements - Master 1 et 2 Risques et Environnements")
+    if selected_course == "MOCIS":
+        st.title(
+            "MOCIS - Master Mathématiques et Optimisation pour la Connaissance, l'Incertitude et la Simulation"
+        )
         st.header("List of audited courses")
-        courses_m1m2 = ['Remote Sensing - Desa']
-        for course,i  in zip(courses_m1m2, range(1,len(courses_m1m2)+1)):
+        courses_mocis = [
+            "Coastal Hydrodynamics - A. Stegner, Y. Cuypers",
+            "Energetics of the climate system - Hervé Le Treut",
+            "Clouds, Aerosols and Precipitation - Hélène Chepfer",
+            "Physical Oceanography - Oceanic circulation - Pascale Bouruet",
+            "GFD-1 Geophysical Fluid Dynamics - Models and their main properties - Zeitlin",
+        ]
+        for course, i in zip(courses_mocis, range(1, len(courses_mocis) + 1)):
+            st.write(f"{i} - {course}")
+
+    if selected_course == "M1M2 Risques et environnements":
+        st.title(
+            "M1M2 Risques et Environnements - Master 1 et 2 Risques et Environnements"
+        )
+        st.header("List of audited courses")
+        courses_m1m2 = ["Remote Sensing - Desa"]
+        for course, i in zip(courses_m1m2, range(1, len(courses_m1m2) + 1)):
             st.write(f"{i} - {course}")
 
 
@@ -361,38 +418,53 @@ if sidebar == pages[9]:
 
     if selected_trip == "South America":
         st.title("South America 2016/2017")
-        st.header("Interviews with actors of social and environmental changes / In construction")
+        st.header(
+            "Interviews with actors of social and environmental changes / In construction"
+        )
 
     elif selected_trip == "Greece 2017":
         st.title("Greece 2017")
-        
+
 if sidebar == pages[10]:
-    selected_year = st.selectbox("Select a Year", ['Cours Florent Ateliers Jeunes', 'Henri IV First Year', 'Henri IV Second Year', 'Cours Florent Stage', 'Tentative d\'organisation d\'une pièce à l\'école Polytechnique','First Year EVOE', 'Second Year EVOE', 'Espace Beaujon', 'Paid Work'])
-    
-    if selected_year == 'Cours Florent Ateliers Jeunes':
+    selected_year = st.selectbox(
+        "Select a Year",
+        [
+            "Cours Florent Ateliers Jeunes",
+            "Henri IV First Year",
+            "Henri IV Second Year",
+            "Cours Florent Stage",
+            "Tentative d'organisation d'une pièce à l'école Polytechnique",
+            "First Year EVOE",
+            "Second Year EVOE",
+            "Espace Beaujon",
+            "Paid Work",
+        ],
+    )
+
+    if selected_year == "Cours Florent Ateliers Jeunes":
         st.title("Cours Florent Ateliers Jeunes - 2 ans")
         st.header("Poèmes d'Aragon - Le Fou d'Elsa")
 
-    if selected_year == 'Henri IV First Year':
+    if selected_year == "Henri IV First Year":
         st.title("Henri IV First Year")
         st.header("Faut pas Payer - Dario Fo au théâtre Mouffetard")
-    
-    if selected_year == 'Henri IV Second Year':
+
+    if selected_year == "Henri IV Second Year":
         st.title("Henri IV Second Year")
         st.header("Le Roi se Meurt - Ionesco")
-    
-    if selected_year == 'Cours Florent Stage':
+
+    if selected_year == "Cours Florent Stage":
         st.title("Cours Florent Stage")
         st.header("Les Précieuses Ridicules - Molière")
 
-    if selected_year == 'Tentative d\'organisation d\'une pièce à l\'école Polytechnique':
+    if selected_year == "Tentative d'organisation d'une pièce à l'école Polytechnique":
         st.title("Barouffe à Chiogia - Carlo Goldoni")
 
-    if selected_year == 'Espace Beaujon':  
+    if selected_year == "Espace Beaujon":
         st.title("Espace Beaujon")
         st.header("Terrasses - Laurent Gaudet - Jeux Isthmiques")
         st.header("Terrasses - Laurent Gaudet - Espace Beaujon")
-    
+
     if selected_year == "First Year EVOE":
         st.title("First Year")
         st.header("Antigona")
@@ -400,7 +472,7 @@ if sidebar == pages[10]:
     if selected_year == "Second Year EVOE":
         st.title("Second Year")
         st.header("Harry Potter")
-    
+
     elif selected_year == "Paid Work":
         st.title("Paid Work")
         st.header("O Magico de Oz - plataforma")
@@ -476,12 +548,14 @@ if sidebar == pages[11]:
 # TODO: Add descriptions of the courses
 if sidebar == pages[12]:
     st.title("Courses")
-    for course, i, description in zip(courses, range(1,len(courses)+1), description_courses):
+    for course, i, description in zip(
+        courses, range(1, len(courses) + 1), description_courses
+    ):
         st.write(f"{i} - {course}, {description}")
 
 if sidebar == pages[13]:
     st.title("Events")
-    for event, i in zip(events, range(1,len(events)+1)):
+    for event, i in zip(events, range(1, len(events) + 1)):
         st.write(f"{i} - {event}")
 
 if sidebar == pages[14]:
