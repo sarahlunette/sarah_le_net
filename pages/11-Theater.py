@@ -4,7 +4,7 @@ st.title("Theater")
 selected_year = st.selectbox(
     "Select a Year",
     [
-        "Cours Florent Ateliers Jeunes",
+        "Cours Florent Ateliers Jeunesse",
         "Henri IV First Year",
         "Henri IV Second Year",
         "Cours Florent Stage",
@@ -16,7 +16,7 @@ selected_year = st.selectbox(
     ],
 )
 
-if selected_year == "Cours Florent Ateliers Jeunes":
+if selected_year == "Cours Florent Ateliers Jeunesse":
     st.title("Cours Florent Ateliers Jeunes - 2 ans")
     st.header("Poèmes d'Aragon - Le Fou d'Elsa")
 
