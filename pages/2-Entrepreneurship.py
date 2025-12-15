@@ -8,10 +8,10 @@ import re
 
 load_dotenv()
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
-API_URL = st.secrets('API_URL')
+API_URL = st.secrets['API_URL']
 # ⚠️ For demo only — move to st.secrets in production
-ADMIN_USERNAME = st.secrets("ADMIN_USERNAME")
-ADMIN_PASSWORD = st.secrets("ADMIN_Password")
+ADMIN_USERNAME = st.secrets["ADMIN_USERNAME"]
+ADMIN_PASSWORD = st.secrets["ADMIN_Password"]
 
 entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 
