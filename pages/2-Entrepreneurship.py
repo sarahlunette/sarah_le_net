@@ -4,7 +4,6 @@ from github import Github, Auth
 from dotenv import load_dotenv
 import requests
 from fpdf import FPDF
-from github.Auth import Login as GithubLogin
 import re
 
 load_dotenv()
@@ -123,7 +122,7 @@ elif selected_item == "TheLab AI":
 
     try:
         if GITHUB_TOKEN:
-            auth = GithubLogin(GITHUB_USERNAME, GITHUB_TOKEN)
+            auth = Auth.Login(GITHUB_USERNAME, GITHUB_TOKEN)
             gh = Github(auth=auth)
         else:
             gh = Github()
