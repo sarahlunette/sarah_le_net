@@ -7,7 +7,7 @@ from fpdf import FPDF
 import re
 
 load_dotenv()
-GITHUB_TOKEN = st.secrets('GITHUB_TOKEN')
+GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 
 entrepreneurship = ["The Bubble", "TheLab AI", "TheLab Data"]
 
