@@ -138,7 +138,7 @@ elif selected_item == "TheLab AI":
     # CHATBOT
     # =========================
     st.markdown("---")
-    st.title("🧠 ResilienceGPT — RAG Chatbot")
+    st.title("🧠 ResilienceGPT — RAG Chatbot (this might take a few minutes)")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
