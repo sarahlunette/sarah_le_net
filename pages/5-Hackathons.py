@@ -23,7 +23,7 @@ hackathons = [
     "Blackbox AI",
     "Les clés du Château de Versailles",
     "HackTheGap",
-    "IteratexColumbia"
+    "IteratexColumbia",
     "Manus"
 ]
 repo_names = [
