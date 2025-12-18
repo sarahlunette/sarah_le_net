@@ -24,6 +24,7 @@ hackathons = [
     "Les clés du Château de Versailles",
     "HackTheGap",
     "IteratexColumbia"
+    "Manus"
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -42,7 +43,8 @@ repo_names = [
     "easyimmo",
     "Vers-AI-lles",
     "HackTheGap",
-    "Hackathon-Columbia"
+    "Hackathon-Columbia",
+    "Navigating through crises"
 ]
 
 st.title("Hackathons")
