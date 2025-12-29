@@ -1,6 +1,13 @@
 import streamlit as st
 
-career = ["Resume", "Certifications", "LinkedIn", "Professional Courses", "Additional Master's Courses", "CNAM"]
+career = [
+    "Resume",
+    "Certifications",
+    "LinkedIn",
+    "Professional Courses",
+    "Additional Master's Courses",
+    "CNAM",
+]
 
 st.title("Career")
 selected_item = st.selectbox("Choose a section", career)
@@ -31,14 +38,14 @@ elif selected_item == "Professional Courses":
     st.header("Professional Courses")
 
     courses = [
-    "Coursera",
-    "Cloud Guru",
-    "CloudSkillsBoost",
-    "Youtube Videos",
-    "Surfaces Molle, Quéré",
-    "Radiations, Le Treut",
-    "Hydrodynamique",
-    "Turbulence, Tabeling",
+        "Coursera",
+        "Cloud Guru",
+        "CloudSkillsBoost",
+        "Youtube Videos",
+        "Surfaces Molle, Quéré",
+        "Radiations, Le Treut",
+        "Hydrodynamique",
+        "Turbulence, Tabeling",
     ]  # TODO: Les cours, les vidéos, à un moment rajouter les meetups de training
     description_courses = [
         "Prepararing for Google Cloud Certification: CLoud Engineer",

@@ -8,7 +8,7 @@ import re
 
 load_dotenv()
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
-API_URL = st.secrets['API_URL']
+API_URL = st.secrets["API_URL"]
 # ⚠️ For demo only — move to st.secrets in production
 ADMIN_USERNAME = st.secrets["ADMIN_USERNAME"]
 ADMIN_PASSWORD = st.secrets["ADMIN_PASSWORD"]
@@ -59,7 +59,6 @@ if selected_item == "The Bubble":
 
 elif selected_item == "TheLab AI":
 
-
     # =========================
     # CONFIG
     # =========================
@@ -68,13 +67,11 @@ elif selected_item == "TheLab AI":
     GITHUB_USERNAME = "sarahlunette"
     GITHUB_REPO = "TheLab_resilienceai"
 
-
     # =========================
     # AUTH STATE
     # =========================
     if "authenticated" not in st.session_state:
         st.session_state.authenticated = False
-
 
     # =========================
     # HEADER
@@ -96,7 +93,6 @@ elif selected_item == "TheLab AI":
         f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}",
     )
 
-
     # =========================
     # ADMIN LOGIN
     # =========================
@@ -110,7 +106,6 @@ elif selected_item == "TheLab AI":
                 st.success("✅ Admin authenticated")
             else:
                 st.error("❌ Invalid credentials")
-
 
     # =========================
     # README FROM GITHUB
@@ -133,7 +128,6 @@ elif selected_item == "TheLab AI":
     except Exception as e:
         st.warning(f"Could not load README: {e}")
 
-
     # =========================
     # CHATBOT
     # =========================
@@ -143,14 +137,12 @@ elif selected_item == "TheLab AI":
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-
     def clean_llm_markdown(text: str) -> str:
         text = text.replace("\\n", "\n").replace("\\t", "    ").strip('"')
         text = re.sub(r"\n\s+(\- |\* |\d+\. |#)", r"\n\1", text)
         text = re.sub(r"\n\s*(#{1,6})\s*", r"\n\1 ", text)
         text = re.sub(r"\n{3,}", "\n\n", text)
         return text.strip()
-
 
     def generate_pdf_from_markdown(markdown_text, output_path):
         pdf = FPDF()
@@ -161,12 +153,10 @@ elif selected_item == "TheLab AI":
             pdf.multi_cell(0, 5, line)
         pdf.output(output_path)
 
-
     # Display chat history
     for role, message in st.session_state.messages:
         with st.chat_message(role):
             st.markdown(message)
-
 
     # =========================
     # INPUT (ADMIN ONLY)
@@ -195,7 +185,6 @@ elif selected_item == "TheLab AI":
 
             with st.chat_message("assistant"):
                 st.markdown(answer)
-
 
     # =========================
     # PDF EXPORT

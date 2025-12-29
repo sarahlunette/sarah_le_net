@@ -14,8 +14,7 @@ else:
     article_files = [
         f.replace(".html", "").replace("(English_Version)", "").replace("_", " ")
         for f in os.listdir("articles")
-        if f.endswith(".html")
-        & f.replace(".html", "").endswith("(English_Version)")
+        if f.endswith(".html") & f.replace(".html", "").endswith("(English_Version)")
     ]
 
 selected_article = (

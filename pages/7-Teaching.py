@@ -1,9 +1,7 @@
 import streamlit as st
 
 st.title("Teaching")
-media = st.sidebar.selectbox(
-    "Choose a media", ["Data Workshops", "Writing", "Slides"]
-)
+media = st.sidebar.selectbox("Choose a media", ["Data Workshops", "Writing", "Slides"])
 if media == "Data Workshops":
     selected_video = st.sidebar.selectbox(
         "Choose a video",
@@ -31,7 +29,5 @@ if media == "Data Workshops":
         youtube_url = (
             "https://www.youtube.com/watch?v=aO5xc_R0JKQ&ab_channel=DataScientest"
         )
-        st.header(
-            "Multi-threading, multi-processing, and computing power/costs in ML"
-        )
+        st.header("Multi-threading, multi-processing, and computing power/costs in ML")
         st.video(youtube_url)
