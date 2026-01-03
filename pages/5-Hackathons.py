@@ -25,8 +25,8 @@ hackathons = [
     "HackTheGap",
     "IteratexColumbia",
     "Manus",
-    "DevPost: A social media cartography of dangers with Confluent",
-    "Personal Project: Research on LLM responses to transcription of personal journals"
+    "DevPost",
+    "Personal Project"
 ]
 repo_names = [
     "GeoAIHack_team_18",
