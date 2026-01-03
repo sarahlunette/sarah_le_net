@@ -4,12 +4,12 @@ st.title("Photography")
 
 image_urls = [
     (
-        "https://lh3.googleusercontent.com/pw/AP1GczNRCNr1sm096q8jdQPG-gx9g_MDpRjLJWJknspSQRBgx3mYTdAm5KPJZ2wygHc8p5c3iohOAvZ8PqgdVoh4FjvrxYtIkK1ChW2KP0rU4NIDYsNkkziIa4wNJw3-NYCJeqBK5NzByXeGw5P6uf2nrRfRrQ=w2040-h1478-s-no-gm?authuser=0",
-        "Stoa, Athina",
-    ),
-    (
         "https://lh3.googleusercontent.com/pw/AP1GczMhkf9nN6_MmQIc3OCbAANEhmL1LwklY7oMTuQ-Yx9jh0953GrkNq-y6NJO1JiGYgWRjfKgx6aR5GqkP4MsxB2WEkoo9JK9b-q3PX7RVcoMjKNEBzPJwdqMcUgydsOK2INlNIETVOxBzB2aJTLM0SVXkw=w1112-h1478-s-no-gm?authuser=0",
         "Agio Georgious, Thessaloniki",
+    ),
+    (
+        "https://lh3.googleusercontent.com/pw/AP1GczNRCNr1sm096q8jdQPG-gx9g_MDpRjLJWJknspSQRBgx3mYTdAm5KPJZ2wygHc8p5c3iohOAvZ8PqgdVoh4FjvrxYtIkK1ChW2KP0rU4NIDYsNkkziIa4wNJw3-NYCJeqBK5NzByXeGw5P6uf2nrRfRrQ=w2040-h1478-s-no-gm?authuser=0",
+        "Stoa, Athina",
     ),
     (
         "https://lh3.googleusercontent.com/pw/AP1GczPcjg1GIx7PoASOGAlzQ_XeRd9PXwofIuO3DNpGQBhRHbpPj1o35OoKcbx_lz1ruF5w4FVGaXFEOjjQ4bQkJk1WEjdBgwWNGrB2PVXdF04x2kz_TbSlU_FUvdoRw5E7pFLlSu9o3vbhRb84n1KuCUtTMQ=w1962-h1478-s-no-gm?authuser=0",
