@@ -47,7 +47,7 @@ repo_names = [
     "HackTheGap",
     "Hackathon-Columbia",
     "navigating_through_crises",
-    "DevPost"
+    "DevPost",
     "Transcription_OCR"
 ]
 
