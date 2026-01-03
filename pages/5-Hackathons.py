@@ -31,7 +31,7 @@ hackathons = [
 repo_names = [
     "GeoAIHack_team_18",
     "FrugalAI",
-    "bat",
+    "Bat-Adapt",
     "sam_api",
     "Tsunamis_Project",
     "Doctolib_Hackaton",
