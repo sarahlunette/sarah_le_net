@@ -25,6 +25,8 @@ hackathons = [
     "HackTheGap",
     "IteratexColumbia",
     "Manus",
+    "DevPost: A social media cartography of dangers with Confluent",
+    "Personal Project: Research on LLM responses to transcription of personal journals"
 ]
 repo_names = [
     "GeoAIHack_team_18",
@@ -45,6 +47,8 @@ repo_names = [
     "HackTheGap",
     "Hackathon-Columbia",
     "navigating_through_crises",
+    "DevPost"
+    "Transcription_OCR"
 ]
 
 st.title("Hackathons")
