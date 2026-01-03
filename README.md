@@ -36,8 +36,9 @@ The application is built with Streamlit and integrates with GitHub to dynamicall
 ```
 sarah_le_net/
 ├── .DS_Store
+├── .env                       # Environment variables (not in git)
 ├── .gitignore
-├── demo.py                    # Main Streamlit application
+├── TheLab.py                  # Main Streamlit application
 ├── Dockerfile                 # Docker configuration for containerization
 ├── latest.txt                 # Notes on recent tech events and blockchain in healthcare
 ├── portfolio.txt              # Summary of hackathons, interviews, and personal projects
@@ -53,6 +54,7 @@ sarah_le_net/
 │   ├── EcoAct_(French_Version).html
 │   ├── HighWind_(French_Version).html
 │   ├── HighWind.txt
+│   ├── Ministère_de_l'aménagement_du_territoire(French_Version).html
 │   ├── Post_Baobab_(English_Version).html
 │   ├── review_of_GPU_deployment_tools.txt
 │   ├── Solène_de_Baobab_Tech_(French_Version).html
@@ -60,12 +62,25 @@ sarah_le_net/
 │   └── Week_04_28.txt
 ├── CNAM/                      # CNAM project files
 │   └── projet_expoped.pdf
+├── events/                    # Event-related files
+│   └── datacraft.html
 ├── images/                    # Images for resume and gallery
 │   ├── .DS_Store
 │   ├── resume.jpg
 │   └── resume.pdf
 └── pages/                     # Streamlit pages (for multi-page structure)
-    └── 1-Presentation.py
+    ├── 1-Presentation.py
+    ├── 2-Entrepreneurship.py
+    ├── 3-Articles.py
+    ├── 4-Events.py
+    ├── 5-Hackathons.py
+    ├── 6-Resume and Career.py
+    ├── 7-Teaching.py
+    ├── 8-La Jaune et La Rouge.py
+    ├── 9-X-Urgence_Ecologique.py
+    ├── 10-Trips.py
+    ├── 11-Theater.py
+    └── 12-Photography.py
 ```
 
 ## Installation
@@ -95,7 +110,7 @@ sarah_le_net/
 
 4. Run the application:
    ```bash
-   streamlit run demo.py
+   streamlit run TheLab.py
    ```
 
    The app will be available at `http://localhost:8501`.

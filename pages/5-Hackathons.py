@@ -47,8 +47,8 @@ repo_names = [
     "HackTheGap",
     "Hackathon-Columbia",
     "navigating_through_crises",
-    "DevPost",
-    "Transcription_OCR"
+    "devpost",
+    "transcription_ocr"
 ]
 
 st.title("Hackathons")
