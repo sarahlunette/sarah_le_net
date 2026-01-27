@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: "Source Sans Pro", sans-serif;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #31333f;
+      background-color: white;
+      padding: 1rem;
+      text-align: justify;
+    }
+    </style>
+  </style>
+</head>
+<body>
+    <p>
+        J’ai rencontré Adrien Ricci, ancien ingénieur dans l’aéronautique, et Christophe Haus, responsable IA au sein de l’entreprise, ancien diplômé d’une école d’informatique qui a aussi travaillé dans l’aéronautique. Ils ont fondé HighWind, une entreprise de Marseille, à la fin de 2019, sous la constatation qu’il manquait des outils IA pour reconnaître et trier les appels d’urgence selon leur importance.
+    </p>
+    <p>
+        « Comme on avait une vision sur la situation d’urgence, on a voulu créer des compétences technologiques qui n’existaient pas, en France en tout cas. On a commencé par s’adresser au secteur public.
+        J’ai eu des expériences d’urgence dans l’aéronautique : on contacte le SAMU, on sait qu’on a une heure (la golden hour) pour sauver une vie, et qu’au-delà, les chances de décès sont exponentielles. On a étudié quels étaient les blocages dans ces situations. Dans le cas de l’utilisation de l’hélicoptère, par exemple, on a une limitation de vitesse, mais ce n’est pas le seul blocage. Dans cette chaîne qui mène à l’utilisation de l’hélicoptère, la partie de l’appel d’urgence n’est pas optimisée et est un pôle particulièrement chronophage.
+        Le système des appels d’urgence n’a que peu évolué dans ses processus depuis les années 1930 : on décroche, on prend l’appel, on décrit la situation. Des tentatives de création d’applications d’appel d’urgence ont été faites par le SAMU, la Croix Rouge ou des entités privées ainsi que les gouvernements. Le 112 aussi, qui est le numéro d’urgence de l’Union européenne, a été créé récemment, à la fin des années 90. L’AML (Advanced Mobile Location) a été implémentée dans l’ensemble des centres d’appel l’année dernière alors qu’elle avait été décidée en 2016 par l’UE. La triangulation n’est en place que depuis peu dans les systèmes italiens : en 2019, lorsque HighWind a été lancé avec l’AML comme cœur de métier pour répondre à cette problématique, un randonneur tombé dans une crevasse, avec du réseau dans les Alpes italiennes, a appelé et eu les secours mais n’a pas été retrouvé.
+        Finalement, la question était : qu’est-ce qu’on pourrait mettre en œuvre pour avoir de la communication supplémentaire au quotidien, en temps de crise ? »
+    </p>
+    <p>
+        « J’ai étudié les attentats du Bataclan, en retex. On y a vu ce qui avait bloqué. Un des déclencheurs principaux est la quantité d’appels d’urgence : 2 appels à la minute lors d’une urgence normale, 100 appels à la minute lors d’une catastrophe. 99 % de ces appels ne traitent pas d’une urgence vitale. Le SAMU a dû envoyer, au hasard, des ambulances ; ils ne savaient pas où se trouvaient les personnes affectées par la crise qui se déplaçaient (les terroristes du Bataclan en mouvement).
+        On peut désormais faire sens de ces appels d’urgence, avant même de décrocher, et les trier grâce aux métadonnées. Les gens dans la rue appelaient les pompiers en entendant des coups de feu. Ils appelaient pour secourir les victimes, et le nombre d’appels était indigeste, bien au-delà des capacités humaines de traitement. Tous les centres SAMU de France réunis n’auraient pas suffi pour traiter le nombre d’appels. »
+    </p>
+    <p>
+        « Dans l’industrie de la défense, on doit créer des redondances. Le son existe déjà, mais on peut y ajouter des paramètres visuels, de la captation d’image, un visuel de la situation, qui viennent enrichir les données pour analyse, dans le temps de pré-décroché du téléphone. Il existe un pilote lancé pour utiliser les sons du pré-appel. Le transcript du pré-appel n’est pas encore utilisé et les sons seront peut-être transposés au transcript.
+        Il est, par ailleurs, possible d’activer l’AML avec le SAMU, mais cela est soumis aux règles éthiques du RGPD et à des problèmes de sécurité. Cela n’est pas toujours précis suivant les cas. Le système fonctionne très bien cependant, et envoie un SMS de consentement vers l’appelant. Il existe une entité qui travaille sur le sujet, c’est le European Emergency Number Association (EENA). »
+    </p>
+    <p>
+        <b>Quels sont les bénéfices de la vidéo&nbsp;?</b>
+    </p>
+    <p>
+        « Récemment, Naomie Mussenga, femme d’origine africaine qui a appelé les urgences et qui n’arrivait pas à exprimer la situation en raison de difficultés d’expression, a été légèrement secouée par la régulatrice. On ne l’a pas prise au sérieux. De même pour une personne qui avait été atteinte d’un AVC. Les vidéos peuvent être utiles dans ces cas-là.
+        Les vidéos, c’est du tout ou rien. Ou bien c’est très utile, ou bien ça rallonge le temps de traitement et c’est inexploitable : on l’utilise pour les urgences pédiatriques et autres situations spécifiques, mais pas pour les cas d’urgence vitale ; le 911 ne l’utilise pas, mais le 311, les urgences non vitales, l’utilisent. La difficulté principale est que, lors des grands rassemblements, des attentats, des larges catastrophes, envoyer une vidéo, charger une page web, ce n’est pas possible. Pour la 5G, on s’est rendu compte que la bande passante n’est pas assez grande dans ces moments-là.
+        L’implémentation que l’on peut faire, au niveau du SAMU, de cette technologie est la suivante : avec la détection du numéro entrant, on va pouvoir envoyer un lien qui va permettre de communiquer la situation d’urgence. On peut y faire de la computer vision sur 3 axes : le trauma, le contexte et les émotions de la personne. Y a-t-il du sang ? Est-ce une hypothermie ? Y a-t-il nécrose ? Dans quel environnement se trouve-t-on : flammes, vieille voiture, fumée autour de soi ? Cela va permettre, dans cette masse d’appels, de savoir quel est celui des personnes bloquées, réellement en danger, et à quel étage elles le sont. Pour une personne qui appelle et à qui on demande de quantifier la douleur sur une échelle de 1 à 10, la réponse est souvent 7/10, quelle que soit la situation. Il est donc difficile de la quantifier rationnellement. On peut aussi avoir des difficultés à exprimer ce que l’on sent ou voit. Avec la vidéo, cela permettrait d’identifier un certain nombre de cas. On peut aussi sélectionner les accidents prioritaires et mettre en place un code couleur de triage. »
+    </p>
+    <p>
+        « Le temps d’attente dépend des SAMU. Pour les SAMU dernier cri (ex: SAMU 13) comme les marins-pompiers, il y a une vingtaine de secondes d’attente. Dans d’autres cas, c’est plutôt 2 minutes d’attente. Maintenant, même pour les urgences personnelles, je prends le chrono. Il peut y avoir des moments avec plus d’appels. C’est pour cela que notre produit est utile, même pour les urgences quotidiennes. C’est aussi saisonnier : sur les périodes de la rentrée, des vacances scolaires et de Noël, il y a des pics incroyables. »
+    </p>
+    <p>
+        « On va intégrer des informations dans les messages FR-Alert, qui est régi au niveau européen : des alertes, des broadcasts sur les téléphones, sur les smartphones, dessiner une carte sur l’épicentre de la crise. On peut envoyer des messages aux gens à 3 km autour d’une usine, par exemple. Ça peut être un texto en plus, un système d’alerte sur leur téléphone qui fait un bruit reconnaissable et qui donne des infos sur la zone et sur la situation. Le top-down, c’est quoi ? L’information qui vient du haut, des préfets, par exemple. En zone de crise, on donne des infos à la population. On prend uniquement les appels d’urgence, on crée un lien vers l’interface du SAMU, on peut signaler si la personne est en danger et voir l’évolution des personnes dans le périmètre de crise, ou savoir qu’un feu s’approche des habitations. Parfois, des personnes sont en sécurité chez elles, puis l’eau grignote du terrain et ces personnes se retrouvent en danger. Dans ce cas, on peut mettre en place un visuel de monitoring sur les situations. »
+        ... « Avec ces systèmes, on peut passer la masse de situations en parallèle et évidemment les analyser. Sur le plan technique, il est envisageable d’exploiter les flux visuels via une carte de capture HDMI branchée sur l’écran du SAMU. À partir de ce flux, des techniques d’OCR (reconnaissance optique de caractères) on extrait automatiquement les numéros de téléphone des appels entrants, sans nécessiter d’intégration directe avec un webservice.
+        Nous maîtrisons les technologies de streaming, de cybersécurité et la génération de contenus vidéo interactifs (par exemple, des vidéos scrollables), mais cela reste complexe à mettre en œuvre et à maintenir. Cela fait partie des axes de travail en cours.
+        Cependant, il faut souligner une contrainte majeure : la vidéo ne constitue pas, pour le moment, une solution viable pour la gestion des appels d’urgence. Si tous les utilisateurs tentaient de recourir à la vidéo en simultané, le réseau ne pourrait pas suivre. En effet, la saturation des antennes lors des grands rassemblements (stade, manifestations, concerts), la 5G qui est aussi liée à des problématiques de connexions massives, ne permettent pour l’instant pas l’utilisation de ce média. Dans le futur, la 6G pourrait être compatible, mais ce n’est pas encore disponible. »
+    </p>
+    <p>
+        « Lors d’une hémorragie, d’un arrêt cardiaque ou respiratoire, on devrait avoir une réponse sous 20 secondes et non plusieurs minutes. Cela conditionne la vitesse de réponse de LLMs si on en utilise. Ce besoin dépend de la gravité et de l’urgence du cas.
+        Pour l’instant, il y a certains outils: l’ALM récente, photos ou videos pour certains centres et même un projet de détection d’AVC par analyse de la voix. Les organisations sont prêtes à adopter les vidéos et autres produits pour améliorer leur réponse. Il s’agit d’un système critique, autour duquel on peut rajouter beaucoup d’outils : est-ce que tout marche en même temps ? A-t-on le luxe vis-à-vis du risque que cela pose, le temps de tester ? C’est possible de le faire sur des cas non critiques. Mais cela coûte de l’argent. Ils sont en grève tout le temps et n’ont pas de budgets.
+        Les assistants de régulation travaillent dans un SAMU insuffisamment dotés. Intégrer une technologie dans ces organismes, sans taper dans les budgets de fonctionnement, ni créer un problème de formation supplémentaire à chaque nouveau changement de technologie, c’est impossible. Nous, on a développé une méthode pour tester nos produits dans des conditions sûres et qui permettrait, dans le cadre des régimes de santé, d’expérimenter avec des budgets spécifiques, dans des environnements sécurisés. »
+    </p>
+</body>
+</html>

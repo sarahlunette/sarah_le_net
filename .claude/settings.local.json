@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(dir /b \"c:\\\\Users\\\\sarah\\\\Desktop\\\\sarah_le_net\")",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)"
+    ]
+  }
+}
